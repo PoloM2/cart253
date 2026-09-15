@@ -13,6 +13,8 @@
 */
 function setup() {
     createCanvas(640, 640);
+
+    // fill("red");
 }
 
 
@@ -30,12 +32,32 @@ function draw() {
     fill("darkgreen")
     stroke("green")
     rect(0, 475, 640, 300)
-    fill ("grey")
+    //mountain 1
+    fill("grey")
+    stroke("grey")
+    triangle(350,475,550,475,450,200)
+     //mountain 2
+    fill("grey")
+    stroke("grey")
+    triangle(450,475,750,475,550,300)
+    // tree
+    push();
+    fill ("#0eb31f")
     stroke("black")
-    triangle(0,475,100,475,50,200)
+    triangle(0,475,100,475,50,350)
+    pop();
+    //tree left
+    push();
+    fill ("#0eb31f")
+    stroke("black")
+    triangle(150,475,250,475,200,350)
+    pop();
 
-    // background(640,600, 480)
-    
-
+    // background(640,600,480)
+    push();
+    fill ("#0eb31f")
+    stroke("black")
+    triangle(550,475,650,475,600,350)
+    pop();
     // Write stuff here that makes a landscape
 }
