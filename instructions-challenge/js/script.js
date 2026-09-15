@@ -22,6 +22,7 @@ function setup() {
  * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
 */
 function draw() {
+    
     background("orange");
     fill(255,200,110);
     stroke(255,213,128)
@@ -29,17 +30,19 @@ function draw() {
     fill("lightyellow");
     stroke("red")
     ellipse(320,500,280);
-    fill("darkgreen")
-    stroke("green")
-    rect(0, 475, 640, 300)
     //mountain 1
     fill("grey")
-    stroke("grey")
+    stroke(255,200,110)
     triangle(350,475,550,475,450,200)
      //mountain 2
     fill("grey")
-    stroke("grey")
+    stroke(255,200,110)
     triangle(450,475,750,475,550,300)
+    // Ground green
+    fill("darkgreen")
+    stroke("green")
+    rect(0, 475, 640, 300)
+
     // tree
     push();
     fill ("#0eb31f")
@@ -59,5 +62,6 @@ function draw() {
     stroke("black")
     triangle(550,475,650,475,600,350)
     pop();
+
     // Write stuff here that makes a landscape
 }
