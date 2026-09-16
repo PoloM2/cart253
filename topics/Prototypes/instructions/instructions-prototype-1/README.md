@@ -1,6 +1,6 @@
-# TITLE OF PROJECT
+# Star Cruse
 
-AUTHOR NAME
+Marko Anastasovski
 
 [View this project online](URL_FOR_THE_RUNNING_PROJECT)
 
