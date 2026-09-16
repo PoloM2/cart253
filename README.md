@@ -1,12 +1,12 @@
 # **Marko's orbiter**
 
-![CART253 Banner](Orbiter.jpg)
+![Banner](images/Orbiter.JPG)
 
 This place keeps information about my prototyping projects
 
 ## *Social Media*
 
-[](https://www.instagram.com/marko.polo03/?hl=en)
+[Instagram](https://www.instagram.com/marko.polo03/?hl=en)
 
 
 ## *My reflective journal*
