@@ -1,10 +1,14 @@
-# MY COOL WEBSITE!
+# **Marko's orbiter**
 
-I love programming! Because
+![CART253 Banner](Orbiter.jpg)
 
-1. I'm cool
-2. So cool
+This place keeps information about my prototyping projects
 
-## My reflective journal
+## *Social Media*
+
+[](https://www.instagram.com/marko.polo03/?hl=en)
+
+
+## *My reflective journal*
 
 [Link to my reflective journal](./journal.md)
