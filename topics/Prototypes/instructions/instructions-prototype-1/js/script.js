@@ -37,7 +37,11 @@ function draw() {
     strokeWeight(10)
     triangle(15,320,115,320,60,240)
     //ship sails LEARNED TO CHECK P5 REFERENCE TO UNDERSTAND SHAPES AND WHAT ALL THE PARAMETERS MEAN
-    rect(600, 400, 20, 100)
+    fill("brown")
+    stroke("brown")
+    strokeWeight(4)
+    rect(600, 400, 30, 260)
+    //TRIED ROTATE FUNCTION TO ROTATE SHAPES FOR SHIP SAIL BEAM will ask help
     
     
 
