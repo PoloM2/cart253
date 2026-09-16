@@ -1,6 +1,6 @@
 # **Marko's orbiter**
 
-![Banner](images/Orbiter.JPG)
+![Banner](images/Orbiter.jpg)
 
 This place keeps information about my prototyping projects
 
