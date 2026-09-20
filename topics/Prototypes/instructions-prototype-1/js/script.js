@@ -9,7 +9,7 @@
 "use strict";
 
 /**
- * OH LOOK I DIDN'T DESCRIBE SETUP!!
+ * Purple rect for background with a brown arc for the ship and white sails heading towards the stars made from two triangles!!
 */
 function setup() {
     createCanvas(640, 640);
@@ -18,7 +18,7 @@ function setup() {
 
 
 /**
- * A ship a
+ * A ship 
 */
 function draw() {
     background("purple");
@@ -49,5 +49,5 @@ function draw() {
     
     //added sails to ship, moving to next project rotate" and WebGL
     //not seeing logged changes in github, will check to see if I need to push changes to github.
-    // projet is blank and i dont see te problem. i seemed to have lost progress. Somehow lost my files and ressources from the template will paste code into a fresh download.
+    // projet is blank and i dont see te problem. i seemed to have lost progress.
 }
