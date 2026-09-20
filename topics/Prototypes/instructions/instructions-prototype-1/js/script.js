@@ -48,5 +48,6 @@ function draw() {
     //will attempt on fresh slate ( prototype 2 ) to see if I can get it to work.
     
     //added sails to ship, moving to next project rotate" and WebGL
+    //not seeing logged changes in github, will check to see if I need to push changes to github.
 
 }
