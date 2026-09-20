@@ -12,7 +12,7 @@
  * OH LOOK I DIDN'T DESCRIBE SETUP!!
 */
 function setup() {
-    createCanvas(640, 640,);
+    createCanvas(640, 640);
 
 }
 
@@ -49,5 +49,5 @@ function draw() {
     
     //added sails to ship, moving to next project rotate" and WebGL
     //not seeing logged changes in github, will check to see if I need to push changes to github.
-
+    // projet is blank and i dont see te problem. i seemed to have lost progress.
 }
