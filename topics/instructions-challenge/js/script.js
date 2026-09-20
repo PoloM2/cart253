@@ -49,7 +49,7 @@ function draw() {
     stroke("black")
     triangle(0,475,100,475,50,350)
     pop();
-    //tree left
+    // tree left
     push();
     fill ("#0eb31f")
     stroke("black")

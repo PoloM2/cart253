@@ -17,15 +17,15 @@ This place keeps information about my prototyping projects
 
 ![Banner]()
 
-[Prottype 1]()
+[Prototype 1]()
 
 ![Banner]()
 
-[Prottype 2]()
+[Prototype 2]()
 
 ![Banner]()
 
-[Prottype 3]()
+[Prototype 3]()
 
 // im at what to submit 
 //screenshots are ready to be add and links are also set
