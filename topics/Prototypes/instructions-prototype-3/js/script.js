@@ -21,9 +21,10 @@ createCanvas(1000, 1000, WEBGL);
  * It will be a spinning blue circle, and a spining background made with rectangle and spining lines.
 */
 function draw() {
-    background("rgb(59, 158, 13)");
 
+    background("green");
     fill("blue");
-    stroke("blue");
-    circle(0, 0, 100);
+    stroke("rgb(7, 130, 245)");
+    strokeWeight(10);
+    circle(0, 0, 300);
 }
