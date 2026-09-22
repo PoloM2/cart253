@@ -21,11 +21,11 @@ function setup() {
  * A ship a
 */
 function draw() {
-    background("#d800bb");
+    background("purple");
     fill("white");
     stroke("black");
     rect(470, 120, 180, 280);
-    fill("brown");
+    fill("Brown");
     stroke("black");
     strokeWeight(20);
     arc(500, 580, 345,300,0,280, OPEN);

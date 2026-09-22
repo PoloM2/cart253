@@ -21,11 +21,11 @@ function setup() {
  * A ship a
 */
 function draw() {
-    background("purple");
+    background("#d800bb");
     fill("white");
     stroke("black");
     rect(470, 120, 180, 280);
-    fill("Brown");
+    fill("brown");
     stroke("black");
     strokeWeight(20);
     arc(500, 580, 345,300,0,280, OPEN);
@@ -44,6 +44,7 @@ function draw() {
     stroke("brown");
     strokeWeight(4);
     rect(600, 400, 30, 260);
+    
     //TRIED ROTATE FUNCTION TO ROTATE SHAPES FOR SHIP SAIL BEAM will ask help   rotate(quarter_PI);
     //will attempt on fresh slate ( prototype 2 ) to see if I can get it to work.
     
