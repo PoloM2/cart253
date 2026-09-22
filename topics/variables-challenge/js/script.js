@@ -41,30 +41,35 @@ let bird = {
 
 }
 
+
 /**
  * Draw (and update) Mr. Furious
  */
 function draw() {
   background(sky.r, sky.g, sky.b);
-  
+  let rage = map(bird.x, )
   // Draw Mr. Furious as a coloured circle
   push();
   noStroke();
   fill(mrFurious.fill.r, mrFurious.fill.g, mrFurious.fill.b);
-  ellipse(mrFurious.x, mrFurious.y, mrFurious.size);
+  
+
+  ellipse(mrFurious.x + random(-5, 5), mrFurious.y, mrFurious.size);
   pop();
   mrFurious.fill.g = mrFurious.fill.g - 1;
   mrFurious.fill.b = mrFurious.fill.b - 1;
+
   sky.r = sky.r- 0.5;
   sky.g = sky.g- 0.5;
   sky.b = sky.b- 0.5;
 
   push()
-  fill("yellow")
+  fill("grey")
   stroke("orange");
   square(bird.x, bird.y, 25);
   pop()
   bird.x = bird.x * 0.991;
+ 
 
 
 
