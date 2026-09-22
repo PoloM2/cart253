@@ -23,8 +23,13 @@ createCanvas(1000, 1000, WEBGL);
 function draw() {
 
     background("green");
+    fill("black");
+    stroke("black");
+    line(-500,100,500,0);
+    //spinning background effect
     fill("blue");
     stroke("rgb(7, 130, 245)");
     strokeWeight(10);
     circle(0, 0, 300);
+
 }
