@@ -1,24 +1,27 @@
 /**
- * Title of Project
- * Author Name
+ * Spinning Blue Blur
+ * Marko Anastasovski
  * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * A spinning blue circle, and a spining background made with rectangle and spining lines.
  */
 
 "use strict";
 
 /**
- * OH LOOK I DIDN'T DESCRIBE SETUP!!
+ * Green rect for Background, Blue cirle for hedghog, Black lines for spinning background effect
 */
 function setup() {
+    
+createCanvas(1000, 1000, WEBGL);
 
 }
 
 
 /**
- * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
+ * It will be a spinning blue circle, and a spining background made with rectangle and spining lines.
 */
 function draw() {
+    background("rgb( 155, 243, 114)");
+
 
 }
