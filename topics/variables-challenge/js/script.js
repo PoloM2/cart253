@@ -47,14 +47,15 @@ let bird = {
  */
 function draw() {
   background(sky.r, sky.g, sky.b);
-  let rage = map(bird.x, )
+  let birdDistance = abs(mrFurious.x - bird.x);
+  let rage = map(birdDistance, 0, 150, 50, 0, true);
   // Draw Mr. Furious as a coloured circle
   push();
   noStroke();
   fill(mrFurious.fill.r, mrFurious.fill.g, mrFurious.fill.b);
   
 
-  ellipse(mrFurious.x + random(-5, 5), mrFurious.y, mrFurious.size);
+  ellipse(mrFurious.x + random(-rage, rage), mrFurious.y, mrFurious.size);
   pop();
   mrFurious.fill.g = mrFurious.fill.g - 1;
   mrFurious.fill.b = mrFurious.fill.b - 1;
