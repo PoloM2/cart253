@@ -17,15 +17,15 @@ This place keeps information about my prototyping projects
 
 ![Banner]()
 
-[Prototype 1]()
+[Prototype 1](http://127.0.0.1:5500/cart253/topics/Prototypes/instructions-prototype-1/index.html)
 
 ![Banner]()
 
-[Prototype 2]()
+[Prototype 2](http://127.0.0.1:5500/cart253/topics/Prototypes/instructions-prototype-2/index.html)
 
 ![Banner]()
 
-[Prototype 3]()
+[Prototype 3](http://127.0.0.1:5500/cart253/topics/Prototypes/instructions-prototype-3/index.html)
 
 // im at what to submit 
 //screenshots are ready to be add and links are also set
