@@ -15,19 +15,18 @@ This place keeps information about my prototyping projects
 
 ## *Assignment Prototypes*
 
-![Banner]()
+![Banner](images/starcruzer.png)
 
 [Prototype 1](http://127.0.0.1:5500/cart253/topics/Prototypes/instructions-prototype-1/index.html)
 
-![Banner]()
+![Banner](images/foggyFace.png)
 
 [Prototype 2](http://127.0.0.1:5500/cart253/topics/Prototypes/instructions-prototype-2/index.html)
 
-![Banner]()
+![Banner](images/blueblur.png)
 
 [Prototype 3](http://127.0.0.1:5500/cart253/topics/Prototypes/instructions-prototype-3/index.html)
 
 // im at what to submit 
-//screenshots are ready to be add and links are also set
-//a link to another journal entry and i am all set  for that, i can start prototyping 3 times.
-//also create templates for each one name them make sure they are accesssbile.
+//screenshots are ready to be added
+//a link to another journal entry 
