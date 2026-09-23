@@ -13,3 +13,20 @@ This project made me want to learn more about coding and web design. I feel genu
 Marko
 
 ![Banner](images/screenshot.png)
+
+
+# Reflective Journal
+
+## 22 September 2026
+
+I learned a lot more about coding while working on my prototypes. The variables challenge was definitely tougher when I wanted to make things more “spicy” and add more interesting effects. It made me understand better how variables can control different parts of a project.
+
+Making multiple prototypes also helped me deepen my skillset and understand JavaScript a bit more, especially JS draws and functions. Each prototype gave me a chance to try something different and learn from what did not work.
+
+I faced a lot of problems and setbacks while working, but the troubleshooting actually helped me understand the principles and syntax better. Instead of just following instructions, I had to figure out why something was not working and find a way to fix it. This helped me remember the code better.
+
+I also learned more about WebGL and how code can create visual and interactive results. I think it is cool that a few lines of code can completely change what happens on the screen. Seeing my prototypes improve through each version made me more interested in coding.
+
+For the future, I want to keep experimenting with JavaScript, WebGL, and interactive projects. I want to become more comfortable with coding so I can create more complex ideas without being stuck every time something does not work.
+
+Marko
