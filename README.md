@@ -27,6 +27,5 @@ This place keeps information about my prototyping projects
 
 [Prototype 3](http://127.0.0.1:5500/cart253/topics/Prototypes/instructions-prototype-3/index.html)
 
-// im at what to submit 
-//screenshots are ready to be added
-//a link to another journal entry 
+
+[Link to second reflective journal]()
