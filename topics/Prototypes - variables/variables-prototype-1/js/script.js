@@ -1,8 +1,8 @@
 /**
- * Stardust Cruse
+ * drag the circle to its spot
  * Marko Anastasovski
  * 
- * A ship crusing through stars ?
+ * an ellipse follows the cursor and the background implies it belongs in an area on the map
  *
  */
 
@@ -11,6 +11,10 @@
 /**
  * i cannot spell cursor
 */
+let bgImage;
+function preload() {
+    bgImage = loadImage("images/maze.webp");
+}
 
 let curser = {
     size: 50,
@@ -33,6 +37,7 @@ function setup() {
 */
 function draw() {
     //replae background with image hopefully
+    bgImage(bgImage, 500, 500, 1000, 1000);
     
     push();
     fill(curser.fill.r, curser.fill.g, curser.fill.b);
@@ -40,3 +45,4 @@ function draw() {
     pop();
 
 }
+//add color, background image and youre done!
