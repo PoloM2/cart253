@@ -28,7 +28,7 @@ let curser = {
 
 function setup() {
     createCanvas(1000, 1000);
-
+    Image(bgImage, 500, 500, 1000, 1000);
 }
 
 
@@ -37,7 +37,7 @@ function setup() {
 */
 function draw() {
     //replae background with image hopefully
-    bgImage(bgImage, 500, 500, 1000, 1000);
+    
     
     push();
     fill(curser.fill.r, curser.fill.g, curser.fill.b);
