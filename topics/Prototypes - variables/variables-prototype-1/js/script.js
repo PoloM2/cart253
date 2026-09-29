@@ -1,8 +1,8 @@
 /**
- * drag the circle to its spot
+ * drag it!
  * Marko Anastasovski
  * 
- * an ellipse follows the cursor and the background implies it belongs in an area on the map
+ * an ellipse follows the cursor and the background acting as  pencil
  *
  */
 
@@ -11,10 +11,6 @@
 /**
  * i cannot spell cursor
 */
-let bgImage;
-function preload() {
-    bgImage = loadImage(cart253\images/maze.webp");
-}
 
 let curser = {
     size: 50,
@@ -36,8 +32,6 @@ function setup() {
  * circle follows curser
 */
 function draw() {
-    //replae background with image hopefully
-    image(bgImage, 0, 0, 1000, 1000);
     push();
     fill(curser.fill.r, curser.fill.g, curser.fill.b);
     ellipse(mouseX,mouseY, curser.size, curser.size);
