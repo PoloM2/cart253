@@ -1,23 +1,23 @@
 /**
- * Spinning Blue Blur
+ * Rainbow Nut
  * Marko Anastasovski
  * 
- * A spinning blue circle, and a spining background made with rectangle and spining lines.
+ * An acorn that experiences a crazy visual journey
  */
 
 "use strict";
 
-// The blue blur charges his attack
-let ball = {
+// The Nut in question
+let nutImage= {
   // Position and size
   x: 200,
   y: 200,
   size: 200,
   // Colour
   fill: {
-    r: 0,
-    g: 0,
-    b: 225,
+    r: 100,
+    g: 100,
+    b: 100,
   }
 };
 
@@ -25,37 +25,34 @@ let ball = {
 let bG = {
     r : 10,
     g : 10,
-    b : 250,
+    b : 10,
 }
-/**
- * 
- */
+
+//trying to add image from images folder
+function preload() {
+  nutImage = loadImage("images/nut");
+}
+
 function setup() {
   createCanvas(400, 400);
 }
 
-/**
- * Draw (and update) Mr. Furious
- */
 function draw() {
   background(bG.r, bG.g, bG.b);
   push();
   noStroke();
-  fill(ball.fill.r, ball.fill.g, ball.fill.b);
+  fill(nut.fill.r, nut.fill.g, nut.fill.b);
   
+//nut/acorn image
+  image(nutImage, nut.x, nut.y, nut.size, nut.size);
+  nut.fill.r = nut.fill.r + 1;
+  nut.fill.g = nut.fill.g + 1;
 
-  ellipse(random(-50, 50)+ random(-50, 50), ball.y, ball.size);
-  pop();
-  ball.fill.r = ball.fill.r - 1;
-  ball.fill.g = ball.fill.g - 1;
-
-//making an affect to showcase impact of charging attack
+//The background will shift to various colors. rainbow effect
   bG.g = bG.g- 2;
   bG.b = bG.b- 2;
   bG.r = bG.r+ 1;
-//grass
-fill("green");
-rect(0, 300, 400, 305);
+
  
 
 
