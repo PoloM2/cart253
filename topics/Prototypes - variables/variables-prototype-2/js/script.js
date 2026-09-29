@@ -30,18 +30,21 @@ let bG = {
     time: 0,
 }
 
-let nutImg;{
-
+let nutImg;
+async function preload() {
+nutImg = await loadImage("assets/images/nut.png")
 }
-nutImg = loadImage("images/nut.png")
+
 
 //trying to add image from images folder
 
 
-function setup() {
+async function setup() {
   createCanvas(400, 400);
+  await preload()
   imageMode(CENTER)
 }
+
 
 function draw() {
   //The background will shift to random colors. rainbow effect
@@ -50,7 +53,7 @@ function draw() {
   push();
   noStroke();
   fill(nut.fill.r, nut.fill.g, nut.fill.b);
-  
+  image(nutImg, 200, 200, 240, 240)
 
 
 
