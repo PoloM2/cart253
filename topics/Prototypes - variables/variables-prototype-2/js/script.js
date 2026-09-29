@@ -15,9 +15,9 @@ let nut= {
   size: 200,
   // Colour
   fill: {
-    r: 100,
-    g: 100,
-    b: 100,
+    r: 255,
+    g: 200,
+    b: 0,
   }
 };
 
@@ -47,14 +47,15 @@ async function setup() {
 
 
 function draw() {
-  //The background will shift to random colors. rainbow effect
-  frameRate(5)
+  //The background will shift to random colors. rainbow effect with a certain rate
+  frameRate(6)
   background(random(0,255),random(0,255),random(0,255));
   push();
   noStroke();
-  fill(nut.fill.r, nut.fill.g, nut.fill.b);
-  image(nutImg, 200, 200, 240, 240)
-
+  //change color to random colors
+  tint(random(0,255),random(0,255),random(0,255));
+  image(nutImg, random(200,300), random(200,300), 240, 240)
+  
 
 
 
