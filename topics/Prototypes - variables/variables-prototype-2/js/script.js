@@ -8,11 +8,18 @@
 "use strict";
 
 // The Nut in question
-let img;
-
-async function setup() {
-  // Load the image.
-  img = await loadImage('/images/nut.png');
+let nut= {
+  // Position and size
+  x: 200,
+  y: 200,
+  size: 200,
+  // Colour
+  fill: {
+    r: 100,
+    g: 100,
+    b: 100,
+  }
+};
 
 //Background
 let bG = {
