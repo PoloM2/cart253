@@ -30,7 +30,7 @@ let bG = {
 
 //trying to add image from images folder
 function preload() {
-  nutImage = loadImage("images/nut");
+  nut = loadImage("images/nut.png");
 }
 
 function setup() {
