@@ -21,7 +21,7 @@ let ball = {
   }
 };
 
-//the sky is darkening, the clouds are gathering, and Mr. Furious is getting madder and madder.
+//Background
 let bG = {
     r : 10,
     g : 10,
@@ -34,9 +34,6 @@ function setup() {
   createCanvas(400, 400);
 }
 
-/**
- * Draw (and update) Mr. Furious
- */
 function draw() {
   background(bG.r, bG.g, bG.b);
   push();
