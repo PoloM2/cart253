@@ -29,3 +29,17 @@ This place keeps information about my prototyping projects
 
 
 [Link to second reflective journal]()
+
+## *Variable Prototypes*
+
+![Banner](images/DragIt.png)
+
+[Prototype 1](http://127.0.0.1:5500/cart253/topics/Prototypes/instructions-prototype-1/index.html)
+
+![Banner](images/foggyFace.png)
+
+[Prototype 2](http://127.0.0.1:5500/cart253/topics/Prototypes/instructions-prototype-2/index.html)
+
+![Banner](images/blueblur.png)
+
+[Prototype 3](http://127.0.0.1:5500/cart253/topics/Prototypes/instructions-prototype-3/index.html)

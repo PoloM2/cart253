@@ -38,4 +38,4 @@ function draw() {
     pop();
 
 }
-//add color, background image and youre done!
+//add color, background image and youre done! boy was i wrong!
