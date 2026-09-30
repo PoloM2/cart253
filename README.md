@@ -34,12 +34,12 @@ This place keeps information about my prototyping projects
 
 ![Banner](images/DragIt.png)
 
-[Prototype 1](http://127.0.0.1:5500/cart253/topics/Prototypes/instructions-prototype-1/index.html)
+[Prototype 1](http://127.0.0.1:5500/cart253/topics/Prototypes%20-%20variables/variables-prototype-1/)
 
-![Banner](images/foggyFace.png)
+![Banner](images/rainbownut.png)
 
-[Prototype 2](http://127.0.0.1:5500/cart253/topics/Prototypes/instructions-prototype-2/index.html)
+[Prototype 2](http://127.0.0.1:5500/cart253/topics/Prototypes%20-%20variables/variables-prototype-2/)
 
-![Banner](images/blueblur.png)
+![Banner](images/moonglide.png)
 
-[Prototype 3](http://127.0.0.1:5500/cart253/topics/Prototypes/instructions-prototype-3/index.html)
+[Prototype 3](http://127.0.0.1:5500/cart253/topics/Prototypes%20-%20variables/variables-prototype-3/)

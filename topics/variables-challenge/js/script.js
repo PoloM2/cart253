@@ -20,7 +20,7 @@ let mrFurious = {
     b: 225,
   }
 };
-
+z
 //the sky is darkening, the clouds are gathering, and Mr. Furious is getting madder and madder.
 let sky = {
     r : 160,
