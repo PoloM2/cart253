@@ -27,8 +27,7 @@ This place keeps information about my prototyping projects
 
 [Prototype 3](http://127.0.0.1:5500/cart253/topics/Prototypes/instructions-prototype-3/index.html)
 
-
-[Link to second reflective journal]()
+[Link to my reflective journal](./journal.md)
 
 ## *Variable Prototypes*
 
@@ -43,3 +42,5 @@ This place keeps information about my prototyping projects
 ![Banner](images/moonglide.png)
 
 [Prototype 3](http://127.0.0.1:5500/cart253/topics/Prototypes%20-%20variables/variables-prototype-3/)
+
+[Link to my reflective journal](./journal.md)

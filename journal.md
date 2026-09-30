@@ -30,3 +30,15 @@ I also learned more about WebGL and how code can create visual and interactive r
 For the future, I want to keep experimenting with JavaScript, WebGL, and interactive projects. I want to become more comfortable with coding so I can create more complex ideas without being stuck every time something does not work.
 
 Marko
+
+# Reflective Journal
+
+## 29 September 2026
+
+I learned more about coding through my prototypes, especially syntax and variables. I also learned how to add images using different let variables and functions.
+
+There was definitely a lot of frustration when things did not work, but troubleshooting helped me understand the code better. It was sometimes annoying, but figuring out the problems made it worth it.
+
+Overall, I learned a lot more about JavaScript and how different functions work together. It was challenging but also fun to see my ideas actually work on screen.
+
+Marko
