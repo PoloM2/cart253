@@ -2,7 +2,7 @@
  * Rainbow Nut
  * Marko Anastasovski
  * 
- * An acorn that experiences a crazy visual journey
+ * An nut that experiences a crazy visual journey
  */
 
 "use strict";
@@ -21,7 +21,7 @@ let nut= {
   }
 };
 
-//Background
+//Background in which the nut is
 let bG = {
     r : 250,
     g : 250,
@@ -37,6 +37,7 @@ nutImg = await loadImage("assets/images/nut.png")
 
 
 //trying to add image from images folder
+//changed it to a diff path (assets)
 
 
 async function setup() {
@@ -56,7 +57,5 @@ function draw() {
   tint(random(0,255),random(0,255),random(0,255));
   image(nutImg, random(200,300), random(200,300), 240, 240)
   
-
-
 
 }
