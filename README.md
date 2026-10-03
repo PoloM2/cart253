@@ -43,6 +43,6 @@ This place keeps information about my prototyping projects
 
 [Prototype 3](https://polom2.github.io/cart253/topics/Prototypes-variables/variables-prototype-3/)
 
-[Link to my reflective journal](./journal.md) 
-
 [link to my code]()
+
+[Link to my reflective journal](./journal.md) 
