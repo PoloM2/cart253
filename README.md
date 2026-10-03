@@ -21,11 +21,11 @@ This place keeps information about my prototyping projects
 
 ![Banner](images/foggyFace.png)
 
-[Prototype 2](http://polom2.github.io/cart253/topics/Prototypes/instructions-prototype-2/index.html)
+[Prototype 2](https://polom2.github.io/cart253/topics/Prototypes/instructions-prototype-2/index.html)
 
 ![Banner](images/blueblur.png)
 
-[Prototype 3](http://polom2.github.io/cart253/topics/Prototypes/instructions-prototype-3/index.html)
+[Prototype 3](https://polom2.github.io/cart253/topics/Prototypes/instructions-prototype-3/index.html)
 
 [Link to my reflective journal](./journal.md)
 
@@ -33,15 +33,16 @@ This place keeps information about my prototyping projects
 
 ![Banner](images/DragIt.png)
 
-[Prototype 1](http://polom2.github.io/cart253/topics/Prototypes-variables/variables-prototype-1/index.html)
+[Prototype 1](https://polom2.github.io/cart253/topics/Prototypes-variables/variables-prototype-1/index.html)
 
 ![Banner](images/rainbownut.png)
 
-[Prototype 2](http://polom2.github.io/cart253/topics/Prototypes%20-%20variables/variables-prototype-2/)
+[Prototype 2](https://polom2.github.io/cart253/topics/Prototypes%20-%20variables/variables-prototype-2/)
 
 ![Banner](images/moonglide.png)
 
-[Prototype 3](http://polom2.github.io/cart253/topics/Prototypes%20-%20variables/variables-prototype-3/)
+[Prototype 3](https://polom2.github.io/cart253/topics/Prototypes%20-%20variables/variables-prototype-3/)
 
 [Link to my reflective journal](./journal.md) 
+
 [link to my code]()
