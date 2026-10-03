@@ -37,11 +37,11 @@ This place keeps information about my prototyping projects
 
 ![Banner](images/rainbownut.png)
 
-[Prototype 2](https://polom2.github.io/cart253/topics/Prototypes%20-%20variables/variables-prototype-2/)
+[Prototype 2](https://polom2.github.io/cart253/topics/Prototypes-variables/variables-prototype-2/)
 
 ![Banner](images/moonglide.png)
 
-[Prototype 3](https://polom2.github.io/cart253/topics/Prototypes%20-%20variables/variables-prototype-3/)
+[Prototype 3](https://polom2.github.io/cart253/topics/Prototypes-variables/variables-prototype-3/)
 
 [Link to my reflective journal](./journal.md) 
 
