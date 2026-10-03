@@ -41,7 +41,7 @@ This place keeps information about my prototyping projects
 
 ![Banner](images/rainbownut.png)
 
-[link to my code](C:\Users\Marko\Documents\GitHub\cart253\topics\Prototypes-variables\variables-prototype-1\js\script.js)
+[link to my code](./variables-prototype-1\js\script.js)
 
 [Prototype 2](https://polom2.github.io/cart253/topics/Prototypes-variables/variables-prototype-2/)
 //add link to code
