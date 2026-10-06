@@ -1,6 +1,6 @@
-# TITLE OF PROJECT
+# Open the door
 
-AUTHOR NAME
+Marko
 
 [View this project online](URL_FOR_THE_RUNNING_PROJECT)
 
