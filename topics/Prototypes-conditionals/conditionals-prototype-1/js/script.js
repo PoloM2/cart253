@@ -2,14 +2,13 @@
  * Hide the stash!
  * Marko Anastasovski
  * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * A criminal is about get caught with the stash! Help him stow it away for later!
  */
 
 "use strict";
 
 /**
- * constants for the mouse and object,
+ * const for criminal and cash bag, follows mouse to push bag out of scene when overlapping.
 */
 
 let r = 0
@@ -24,8 +23,8 @@ const crook = {
 const user = {
   x: undefined, // will be mouseX
   y: undefined, // will be mouseY
-  size: 75,
-  fill: "#000000"
+  size: 60,
+  fill: "#665757"
 };
 
 /**
@@ -46,13 +45,12 @@ function draw() {
   push();
 
 
-// Move user 
+// Move user and "crook" bag"!
   moveUser();
 
-// move crook
   movecrook();
 
-// Draw the user and "crook"
+// Draw the user and "crook" bag!
   drawUser();
   drawcrook();
 }
@@ -69,10 +67,12 @@ function moveUser() {
  */
 function drawUser() {
   push();
-  noStroke();
   fill(user.fill);
+  stroke("black");
+  strokeWeight("3");
   ellipse(user.x, user.y, user.size);
   pop();
+
 }
 
 /**
@@ -84,6 +84,10 @@ function drawcrook() {
   fill(crook.fill);
   ellipse(crook.x, crook.y, crook.size);
   pop();
+  fill("#131111");
+  textAlign(CENTER, CENTER);
+  textSize(100);
+  text("$", crook.x, crook.y);
 }
 
 function movecrook() {
