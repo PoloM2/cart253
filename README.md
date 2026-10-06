@@ -74,6 +74,7 @@ This place keeps information about my prototyping projects
 
 
 ![Banner](images/openthedoor.png)
+
 [Online](https://polom2.github.io/cart253/topics/Prototypes-conditionals/conditionals-prototype-2/)
 
 [code](https://github.com/PoloM2/cart253/blob/main/topics/Prototypes-conditionals/conditionals-prototype-2//js/script.js)
