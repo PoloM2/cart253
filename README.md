@@ -1,6 +1,6 @@
-# **Marko's orbiter**
+# **Marko's Island**
 
-![Banner](images/Orbiter.jpg)
+![Banner](images/marko.png)
 
 This place keeps information about my prototyping projects
 
@@ -19,7 +19,7 @@ This place keeps information about my prototyping projects
 
 [Online](https://polom2.github.io/cart253/topics/Prototypes/instructions-prototype-1/index.html)
 
-[Code](https://github.com/PoloM2/cart253/blob/main/topics/Prototypes-variables/variables-prototype-1/js/script.js)
+[Code](https://github.com/PoloM2/cart253/blob/main/topics/Prototypes/instructions-prototype-1/js/script.js)
 
 
 
@@ -27,13 +27,13 @@ This place keeps information about my prototyping projects
 
 [Prototype 2](https://polom2.github.io/cart253/topics/Prototypes/instructions-prototype-2/index.html)
 
-[Code](https://github.com/PoloM2/cart253/blob/main/topics/Prototypes-variables/variables-prototype-2/js/script.js)
+[Code](https://github.com/PoloM2/cart253/blob/main/topics/Prototypes/instructions-prototype-2/js/script.js)
 
 ![Banner](images/blueblur.png)
 
 [Prototype 3](https://polom2.github.io/cart253/topics/Prototypes/instructions-prototype-3/index.html)
 
-[Code](https://github.com/PoloM2/cart253/blob/main/topics/Prototypes-variables/variables-prototype-3/js/script.js)
+[Code](https://github.com/PoloM2/cart253/blob/main/topics/Prototypes/instructions-prototype-3/js/script.js)
 
 [Link to my reflective journal](./journal.md)
 
