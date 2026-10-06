@@ -64,6 +64,6 @@ This place keeps information about my prototyping projects
 
 ## *Conditional Prototypes*
 
-![Banner](stashcash.png)
+![Banner](images/stashcash.png)
 
 [prototype 1](https://polom2.github.io/cart253/topics/Prototypes-conditionals/conditionals-prototype-1/)
