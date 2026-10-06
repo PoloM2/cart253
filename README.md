@@ -19,7 +19,7 @@ This place keeps information about my prototyping projects
 
 [Online](https://polom2.github.io/cart253/topics/Prototypes/instructions-prototype-1/index.html)
 
-[Code](https://github.com/polom2/cart253/tree/main/Prototypes/instructions-prototype-1/script.js)
+[Code](https://github.com/polom2/cart253/tree/main/Prototypes/instructions-prototype-1/js/script.js)
 
 
 
