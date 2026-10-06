@@ -59,4 +59,11 @@ This place keeps information about my prototyping projects
 
 [Code](https://github.com/PoloM2/cart253/blob/main/topics/Prototypes-variables/variables-prototype-3/js/script.js)
 
-[Link to my reflective journal](./journal.md) 
+[Link to my reflective journal](./journal.md)
+
+
+## *Conditional Prototypes*
+
+![Banner](stashcash.png)
+
+[prototype 1](https://polom2.github.io/cart253/topics/Prototypes-conditionals/conditionals-prototype-1/)
