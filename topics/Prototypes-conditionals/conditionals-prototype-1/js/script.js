@@ -24,7 +24,7 @@ const user = {
   x: undefined, // will be mouseX
   y: undefined, // will be mouseY
   size: 60,
-  fill: "#665757"
+  fill: "#e7d8a7"
 };
 
 /**
@@ -41,8 +41,13 @@ function draw() {
   frameRate(8)
   background(r, 0, 255 - r);
   r = (r + 100) %255;
-
   push();
+
+//Header that will display an instruction!
+  fill("#ffffff");
+  textAlign(CENTER, TOP);
+  textSize(34);
+  text("STASH THE CASH!", 200, 20);
 
 
 // Move user and "crook" bag"!
@@ -72,6 +77,13 @@ function drawUser() {
   strokeWeight("3");
   ellipse(user.x, user.y, user.size);
   pop();
+
+  fill("black");
+  textSize(24);
+  textAlign(CENTER, CENTER);
+  text("o_o'", user.x, user.y);
+
+
 
 }
 
