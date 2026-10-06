@@ -17,9 +17,11 @@ This place keeps information about my prototyping projects
 
 ![Banner](images/starcruzer.png)
 
-[Prototype 1](https://polom2.github.io/cart253/topics/Prototypes/instructions-prototype-1/index.html)
-//add link to code
-[link to my](file:///C:/Users/Marko/Documents/GitHub/cart253/topics/Prototypes/instructions-prototype-1/js/script.js)
+[Online](https://polom2.github.io/cart253/topics/Prototypes/instructions-prototype-1/index.html)
+
+[Code](file:///C:/Users/Marko/Documents/GitHub/cart253/topics/Prototypes/instructions-prototype-1/js/script.js)
+
+
 
 ![Banner](images/foggyFace.png)
 
@@ -33,11 +35,14 @@ This place keeps information about my prototyping projects
 
 [Link to my reflective journal](./journal.md)
 
+
+
+
 ## *Variable Prototypes*
 
 ![Banner](images/DragIt.png)
 
-[Prototype 1](https://polom2.github.io/cart253/topics/Prototypes-variables/variables-prototype-1/index.html)
+[Online](https://polom2.github.io/cart253/topics/Prototypes-variables/variables-prototype-1/index.html)
 
 ![Banner](images/rainbownut.png)
 
