@@ -12,6 +12,7 @@
  * OH LOOK I DIDN'T DESCRIBE SETUP!!
 */
 function setup() {
+createCanvas(400, 400);
 
 }
 

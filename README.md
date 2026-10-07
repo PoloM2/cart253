@@ -25,13 +25,13 @@ This place keeps information about my prototyping projects
 
 ![Banner](images/foggyFace.png)
 
-[Prototype 2](https://polom2.github.io/cart253/topics/Prototypes/instructions-prototype-2/index.html)
+[Online](https://polom2.github.io/cart253/topics/Prototypes/instructions-prototype-2/index.html)
 
 [Code](https://github.com/PoloM2/cart253/blob/main/topics/Prototypes/instructions-prototype-2/js/script.js)
 
 ![Banner](images/blueblur.png)
 
-[Prototype 3](https://polom2.github.io/cart253/topics/Prototypes/instructions-prototype-3/index.html)
+[Online](https://polom2.github.io/cart253/topics/Prototypes/instructions-prototype-3/index.html)
 
 [Code](https://github.com/PoloM2/cart253/blob/main/topics/Prototypes/instructions-prototype-3/js/script.js)
 
