@@ -32,21 +32,22 @@ const user = {
   y: undefined, // will be mouseY
   size: 30,
   fill: "#e7d8a7"
-};
+}
+
 function setup() {
 createCanvas(500, 500);
 }
 
 
 /**
- * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
+ * It a hand that follow th mouse x and y, when it overlaps with the door nob and mouse is clicked, the rect aka door and ellipse aka doornob VANISH aka turn to rgb ZERo in all values.
 */
 function draw() {
     //house
 
     background("#a98427");
 
-     fill("black");
+    fill("black");
     textSize(24);
     textAlign(CENTER, CENTER);
     text("OPEN THE DOOR NOW!", 250, 20);

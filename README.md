@@ -4,12 +4,12 @@
 
 This place keeps information about my prototyping projects
 
-## *Social Media*
+### *Social Media*
 
 [Instagram](https://www.instagram.com/marko.polo03/?hl=en)
 
 
-## *My reflective journal*
+### *My reflective journal*
 
 [Link to my reflective journal](./journal.md)
 
@@ -35,7 +35,7 @@ This place keeps information about my prototyping projects
 
 [Code](https://github.com/PoloM2/cart253/blob/main/topics/Prototypes/instructions-prototype-3/js/script.js)
 
-[Link to my reflective journal](./journal.md)
+### [Link to my reflective journal](./journal.md)
 
 
 
@@ -61,7 +61,7 @@ This place keeps information about my prototyping projects
 
 [Code](https://github.com/PoloM2/cart253/blob/main/topics/Prototypes-variables/variables-prototype-3/js/script.js)
 
-[Link to my reflective journal](./journal.md)
+### [Link to my reflective journal](./journal.md)
 
 
 ## *Conditional Prototypes*
@@ -78,3 +78,12 @@ This place keeps information about my prototyping projects
 [Online](https://polom2.github.io/cart253/topics/Prototypes-conditionals/conditionals-prototype-2/)
 
 [code](https://github.com/PoloM2/cart253/blob/main/topics/Prototypes-conditionals/conditionals-prototype-2//js/script.js)
+
+
+![Banner](images/)
+
+[Online](https://polom2.github.io/cart253/topics/Prototypes-conditionals/conditionals-prototype-3/)
+
+[code](https://github.com/PoloM2/cart253/blob/main/topics/Prototypes-conditionals/conditionals-prototype-3//js/script.js)
+
+### [Link to my reflective journal](./journal.md)
