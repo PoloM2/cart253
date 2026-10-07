@@ -1,4 +1,4 @@
-# Reflective Journal
+# Reflective Journal 1
 
 ## 15 September 2026
 
@@ -15,7 +15,7 @@ Marko
 ![Banner](images/screenshot.png)
 
 
-# Reflective Journal
+# Reflective Journal 2
 
 ## 22 September 2026
 
@@ -31,7 +31,7 @@ For the future, I want to keep experimenting with JavaScript, WebGL, and interac
 
 Marko
 
-# Reflective Journal
+# Reflective Journal 3
 
 ## 29 September 2026
 
@@ -40,5 +40,17 @@ I learned more about coding through my prototypes, especially syntax and variabl
 There was definitely a lot of frustration when things did not work, but troubleshooting helped me understand the code better. It was sometimes annoying, but figuring out the problems made it worth it.
 
 Overall, I learned a lot more about JavaScript and how different functions work together. It was challenging but also fun to see my ideas actually work on screen.
+
+Marko
+
+# Reflective Journal 4
+
+I learned more about conditionals and how text can be added to my prototypes. I learned how to use text functions to add instructions and small details to the screen, like the “STASH THE CASH!” header and the face on the character. It made my prototypes feel more complete and interactive.
+
+I also learned more about how different parts of the code work together. Using variables, functions, and conditionals can make the prototype react and change depending on what is happening. It was still confusing at times, but I am getting better at understanding what each part of the code is doing.
+
+Another thing I learned was how to properly use the right file paths for links to my code and online drawings. I had some problems with paths before, so understanding how to connect everything properly made things easier.
+
+Overall, I am slowly becoming more comfortable with JavaScript and making interactive drawings. I still have a lot to learn, but troubleshooting and experimenting with different ideas is helping me understand the code better.
 
 Marko
