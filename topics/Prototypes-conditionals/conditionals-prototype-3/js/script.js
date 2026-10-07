@@ -2,8 +2,7 @@
  * Score It!
  * Marko
  * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * a football field, move the BALL using the mouse to insert it into the goal and CLICK to SCORE!
  */
 
 "use strict";
