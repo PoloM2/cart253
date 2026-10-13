@@ -72,15 +72,4 @@ function keyPressed() {
         orbSize = 300;
 }
 }
-let Red = false;
 
-function mousePressed() {
-
-if (Red== false){
-    Red = true;
-    
-}
-else{
-    Red = false;
-}
-}
