@@ -41,12 +41,12 @@ async function setup() {
 */
 function draw() {
 
-    shake = anger * 2;
+    shake = anger * 8;
     translate(random(-shake, shake), random(-shake, shake));
 
     image(backgroundImg, 250, 250, 240, 240);
 
-    let breathing = sin(frameCount * (0.05 + anger * 0.03)) * (0.08 + anger *2);
+    let breathing = sin(frameCount * (0.05 + anger * 0.03)) * (1 + anger *2);
     if (awakened) {
     fill("red");
     stroke("red");
@@ -55,6 +55,20 @@ function draw() {
     stroke(0, 0, 0);
 }
     circle(246, 255, eyeSize + breathing);
+
+
+    //add text for instructions
+     fill("0,0,0");
+  textAlign(CENTER, BOTTOM);
+  textSize(24);
+  text("It's sleeping...I wouldn't wake it!", 250, 450);
+
+
+  fill("0,0,0");
+  textAlign(CENTER, BOTTOM);
+  textSize(30);
+  text(" spam SPACEBAR...or dont", 250, 100);
+
 
 }
 
