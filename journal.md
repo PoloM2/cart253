@@ -45,6 +45,8 @@ Marko
 
 # Reflective Journal 4
 
+## 6 october 2026
+
 I learned more about conditionals and how text can be added to my prototypes. I learned how to use text functions to add instructions and small details to the screen, like the “STASH THE CASH!” header and the face on the character. It made my prototypes feel more complete and interactive.
 
 I also learned more about how different parts of the code work together. Using variables, functions, and conditionals can make the prototype react and change depending on what is happening. It was still confusing at times, but I am getting better at understanding what each part of the code is doing.
@@ -54,3 +56,18 @@ Another thing I learned was how to properly use the right file paths for links t
 Overall, I am slowly becoming more comfortable with JavaScript and making interactive drawings. I still have a lot to learn, but troubleshooting and experimenting with different ideas is helping me understand the code better.
 
 Marko
+
+# Reflective Journal 5
+
+## 13 october 2026
+
+I learned more about conditionals and how to add text to my prototypes. Adding instructions like “STASH THE CASH!” and giving my character a face made the project feel more complete and gave it more personality. I realized that even small details can help communicate an idea and make an interactive drawing more interesting.
+
+I also experimented with variables to change colors and make the background change over time. At first, understanding how variables, functions, and conditionals work together was confusing, but I am slowly getting better at connecting them. This is helping me become more independent when I want to experiment with an idea instead of only following examples.
+
+Another thing I learned was how to use the correct file paths for links to my code and online drawings. I had problems with this before, but troubleshooting helped me understand why the correct syntax and organization matter.
+
+I think these projects are helping me grow as both a student and an artist. I am learning to be more patient when things do not work and to see mistakes as part of the process. Coding also gives me another way to express my ideas, because I can make visuals react, change, and communicate something to the viewer. I still have a lot to learn, but I feel more confident experimenting and finding solutions on my own.
+
+Marko
+
