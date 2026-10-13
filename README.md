@@ -87,3 +87,11 @@ This place keeps information about my prototyping projects
 [code](https://github.com/PoloM2/cart253/blob/main/topics/Prototypes-conditionals/conditionals-prototype-3//js/script.js)
 
 ### [Link to my reflective journal](./journal.md)
+
+## *Event Prototypes*
+
+![Banner](images/nervouscircle.png)
+
+[Online](https://polom2.github.io/cart253/topics/Prototypes-events/events-prototype-1/)
+
+[code](https://github.com/PoloM2/cart253/blob/main/topics/Prototypes-events/events-prototype-1//js/script.js)
