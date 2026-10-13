@@ -1,9 +1,8 @@
 /**
  * Don't Wake It!
- * Author Name
+ * Marko
  * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * This background image with have aa circle that covers the eye intitally, once you press spacebar once the circle shrinks to a small iris giving off the illusion of the eye opening...the more you presss the more the creature gets upset.
  */
 
 "use strict";
@@ -31,6 +30,7 @@ async function preload() {
 
 async function setup() {
   createCanvas(500, 500);
+  noSmooth();
   await preload();
   imageMode(CENTER);
 }
@@ -46,7 +46,7 @@ function draw() {
 
     image(backgroundImg, 250, 250, 240, 240);
 
-    let breathing = sin(frameCount * (0.05 + anger * 0.03)) * (1 + anger *2);
+    let breathing = sin(frameCount * (0.05 + anger * 0.03)) * (0.08 + anger *2);
     if (awakened) {
     fill("red");
     stroke("red");
