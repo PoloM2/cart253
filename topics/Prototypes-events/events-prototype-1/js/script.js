@@ -9,10 +9,12 @@
 "use strict";
 
 /**
- * OH LOOK I DIDN'T DESCRIBE SETUP!!
+ * 500 by 500 canvas with noaliasing using nosmooth(),
 */
 function setup() {
 
+createCanvas(500, 500);
+noSmooth();
 }
 
 
