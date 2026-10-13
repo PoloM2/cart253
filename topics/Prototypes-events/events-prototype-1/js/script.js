@@ -9,8 +9,10 @@
 "use strict";
 
 /**
- * 500 by 500 canvas with noaliasing using nosmooth(),
+ * 500 by 500 canvas with noaliasing using nosmooth(), using a LET to track the size of the circle call "ORB",
 */
+
+let orbSize = 50
 function setup() {
 
 createCanvas(500, 500);
@@ -19,8 +21,10 @@ noSmooth();
 
 
 /**
- * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
+ * circle that reeacts to differet keys when pressed.
 */
 function draw() {
 
+    bakcground("black");
+    fill("rgb(42, 142, 243)")
 }
