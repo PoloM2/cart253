@@ -42,8 +42,8 @@ let bG = {
 
 async function setup() {
   createCanvas(400, 400);
-  await preload()
-  imageMode(CENTER)
+  await preload();
+  imageMode(CENTER);
 }
 
 
@@ -55,7 +55,7 @@ function draw() {
   noStroke();
   //change color to random colors
   tint(random(0,255),random(0,255),random(0,255));
-  image(nutImg, random(200,300), random(200,300), 240, 240)
+  image(nutImg, random(200,300), random(200,300), 240, 240);
   
 
 }
