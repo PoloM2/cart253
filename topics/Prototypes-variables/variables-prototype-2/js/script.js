@@ -30,10 +30,10 @@ let bG = {
     time: 0,
 }
 
-let nutImg;
-async function preload() {
-nutImg = await loadImage("assets/images/nut.png")
-}
+  let nutImg;
+  async function preload() {
+  nutImg = await loadImage("assets/images/nut.png")
+  }
 
 
 //trying to add image from images folder

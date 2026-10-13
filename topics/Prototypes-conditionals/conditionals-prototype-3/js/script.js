@@ -110,7 +110,7 @@ function drawUser() {
 }
 
 function mousePressed() {
-    // Math updated to match your horizontal drawing layout
+    // replaced dist with math for tihngs other than circle math
     const overlap = (mouseX > goal.x && mouseX < goal.x + goal.h && mouseY > goal.y && mouseY < goal.y + goal.w);
     
     console.log(overlap);

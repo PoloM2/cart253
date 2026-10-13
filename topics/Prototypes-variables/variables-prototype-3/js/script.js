@@ -2,7 +2,7 @@
  * moon car
  * Marko Anastasovski
  *
- * A guy who becomes visibly furious!
+ * 
  */
 
 "use strict";
