@@ -11,14 +11,14 @@
  * making a draw follow user mouse
 */
 let orbSize = 50;
-
+let colorNumber = 0;
 const user = {
   x: undefined, // will be mouseX
   y: undefined, // will be mouseY
   size: 30,
-  r: 255,
-  g: 255,
-  b: 255,
+  r: 200,
+  g: 42,
+  b: 2243,
 }
 
 function setup() {
@@ -66,7 +66,7 @@ let half = boxSize / 2;
 let breathing = sin(frameCount * 0.15) * 8;
    push();
    noFill()
-   stroke(200, 42, 243, 60);
+   stroke(user.r, user.g, user.b, 60);
    strokeWeight(12);
    circle(mouseX, mouseY, orbSize + breathing);
    pop();
@@ -99,5 +99,24 @@ function keyPressed() {
         orbSize = 100;
     } else if (key === 's') {
         orbSize = 10;
+    }
+}
+
+function mousePressed() {
+    colorNumber = colorNumber + 1;
+
+    if (colorNumber === 1) {
+        user.r = 255;
+        user.g = 255;
+        user.b = 255;
+    } else if (colorNumber === 2) {
+        user.r = 255;
+        user.g = 0;
+        user.b = 0;
+    } else {
+        user.r = 200;
+        user.g = 42;
+        user.b = 243;
+        colorNumber = 0;
     }
 }
