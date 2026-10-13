@@ -25,6 +25,7 @@ function setup() {
 
 createCanvas(500, 500);
 noSmooth();
+background(0)
 }
 
 
@@ -32,9 +33,6 @@ noSmooth();
  * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
 */
 function draw() {
-
-background(0, 1);
-
 
 // Move user
   moveUser();
@@ -51,6 +49,11 @@ background(0, 1);
   textAlign(CENTER, BOTTOM);
   textSize(14);
   text("Press S for smaller Brush", 250, 470);
+
+  fill("rgb(179, 247, 21)");
+  textAlign(CENTER, BOTTOM);
+  textSize(14);
+  text("Click mouse to change colors", 250, 450);
 
 }
 
@@ -102,17 +105,18 @@ function keyPressed() {
     }
 }
 
+// making the brush shift cycle through colors when you click the mouse
 function mousePressed() {
     colorNumber = colorNumber + 1;
 
     if (colorNumber === 1) {
-        user.r = 255;
-        user.g = 255;
-        user.b = 255;
+        user.r = 100;
+        user.g = 5;
+        user.b = 200;
     } else if (colorNumber === 2) {
         user.r = 255;
-        user.g = 0;
-        user.b = 0;
+        user.g = 250;
+        user.b = 255;
     } else {
         user.r = 200;
         user.g = 42;
