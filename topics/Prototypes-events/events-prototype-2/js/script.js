@@ -10,7 +10,8 @@
 /**
  * making a draw follow user mouse
 */
-let orbSize = 10;
+let orbSize = 50;
+
 const user = {
   x: undefined, // will be mouseX
   y: undefined, // will be mouseY
@@ -41,9 +42,19 @@ background(0, 1);
 // Draw the user 
   drawUser();
 
+  fill("rgb(186, 140, 238)");
+  textAlign(CENTER, BOTTOM);
+  textSize(14);
+  text("Press A for bigger Brush", 250, 490);
 
+  fill("rgb(179, 247, 21)");
+  textAlign(CENTER, BOTTOM);
+  textSize(14);
+  text("Press S for smaller Brush", 250, 470);
 
 }
+
+
 function drawUser() {
 
 // house coordiantes and math to simplify  drwaing
@@ -52,7 +63,7 @@ let houseY = 270;
 let boxSize = 200; 
 let half = boxSize / 2;
 
-let breathing = sin(frameCount * 0.15) * 20;
+let breathing = sin(frameCount * 0.15) * 8;
    push();
    noFill()
    stroke(200, 42, 243, 60);
@@ -81,4 +92,12 @@ line(houseX + half, houseY - half, houseX, houseY - boxSize);
 function moveUser() {
   user.x = mouseX;
   user.y = mouseY;
+}
+
+function keyPressed() {
+    if (key === 'a') {
+        orbSize = 100;
+    } else if (key === 's') {
+        orbSize = 10;
+    }
 }
