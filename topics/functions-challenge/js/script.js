@@ -7,16 +7,29 @@
  */
 
 "use strict";
-
+let r = 0
 // Our ball
 const ball = {
     x: 300,
     y: 20,
-    width: 10,
-    height: 10,
+    width: 14,
+    height: 15,
     velocity: {
-        x: 0,
+        x: -3,
         y: 10
+    }
+};
+
+
+//ball numnber 2
+const ball2 = {
+    x: 100,
+    y: 50,
+    width: 14,
+    height: 13,
+    velocity: {
+        x: 3,
+        y: 5
     }
 };
 
@@ -40,16 +53,24 @@ function setup() {
  * Move and display the ball and paddle
 */
 function draw() {
-    background("#87ceeb");
+    frameRate(25)
+  background(r, 230, 20 - r);
+  r = (r + 20) %255;
 
     movePaddle(paddle);
+
     moveBall(ball);
-
     handleBounce(ball, paddle);
-
     drawPaddle(paddle);
-    drawBall(ball);
+    //ball numnber 2
+    moveBall(ball2);
+    handleBounce(ball2, paddle);
+    drawBall(ball2);
+
+drawBall(ball);
+
 }
+
 
 /**
  * Moves the paddle
@@ -69,16 +90,24 @@ function moveBall(ball) {
 }
 
 /**
- * Bounces the provided ball off the provided paddle
+ * Bounces the provided ball off the provided paddle, reverse direction and repos
  */
 function handleBounce(ball, paddle) {
 
-    if (checkOvelap(ball.x, ball.y, pabble.y, paddle.x)) {
+    if (checkOverlap(ball, paddle) && ball.velocity.y > 0) {
 
         ball.velocity.y = ball.velocity.y * -1;
-        
-    }
 
+        ball.y = paddle.y - (paddle.height / 2) - (ball.height / 2);
+    }
+}
+
+
+function checkOverlap(rectA, rectB) {
+    return (rectA.x + rectA.width/2 > rectB.x - rectB.width/2 && 
+            rectA.x - rectA.width/2 < rectB.x + rectB.width/2 && 
+            rectA.y + rectA.height/2 > rectB.y - rectB.height/2 && 
+            rectA.y - rectA.height/2 < rectB.y + rectB.height/2);
 }
 
 /**
@@ -88,7 +117,7 @@ function drawPaddle(paddle) {
     push();
     rectMode(CENTER);
     noStroke();
-    fill("pink");
+    fill("black");
     rect(paddle.x, paddle.y, paddle.width, paddle.height);
     pop();
 }
@@ -100,7 +129,7 @@ function drawBall(ball) {
     push();
     rectMode(CENTER);
     noStroke();
-    fill("pink");
+    fill("black");
     rect(ball.x, ball.y, ball.width, ball.height);
     pop();
 }

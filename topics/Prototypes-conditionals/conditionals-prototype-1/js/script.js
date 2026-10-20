@@ -41,7 +41,7 @@ function draw() {
   frameRate(8)
   background(r, 0, 255 - r);
   r = (r + 100) %255;
-  push();
+  
 
 //Header that will display an instruction!
   fill("#ffffff");
