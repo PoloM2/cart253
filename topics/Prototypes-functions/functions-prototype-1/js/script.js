@@ -1,24 +1,14 @@
 /**
- * BProtect the princess
+ * Code Red
  * Marko
  * 
- * protect the princess from stubborn enemies
+ * fight off the aliens
  */
 
 "use strict";
 let r = 0
 // Our ball
-const ball = {
-    x: 300,
-    y: 20,
-    width: 14,
-    height: 15,
-    velocity: {
-        x: -3,
-        y: 10
-    }
-};
-
+let enemies = [];
 
 //ball numnber 2
 const ball2 = {
@@ -48,26 +38,32 @@ function setup() {
 }
 
 
+function createEnemy() {
+    return {
+        x: random (20, width - 20),
+        y: 0,
+        width: 14,
+        height: 15,
+        velocity: {
+            x: random(-2, 2),
+            y: random(3, 6),
+        }
+    }
+}
+
 /**
  * Move and display the ball and paddle
 */
 function draw() {
     frameRate(25)
-  background(r, 230, 20 - r);
-  r = (r + 20) %255;
+  background(r, 0, 20 - r);
+  r = (r + 5) %255;
 
     movePaddle(paddle);
 
-    moveBall(ball);
-    handleBounce(ball, paddle);
-    drawPaddle(paddle);
-    //ball numnber 2
-    moveBall(ball2);
-    handleBounce(ball2, paddle);
-    drawBall(ball2);
-
-drawBall(ball);
-
+   if (frameCount % 25 === 0) {
+    enemies.push(createEnemy());
+   }
 }
 
 
