@@ -163,7 +163,7 @@ function drawPaddle(paddle) {
     push();
     rectMode(CENTER);
     noStroke();
-    fill("white");
+    fill("#21f8ff");
     rect(paddle.x, paddle.y, paddle.width, paddle.height);
     pop();
 }
