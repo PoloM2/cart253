@@ -1,8 +1,8 @@
 /**
- * Code Red
+ * Protect the human
  * Marko
  * 
- * fight off the aliens
+ * fight off the aliens with a shield,
  */
 
 "use strict";
@@ -25,9 +25,9 @@ const ball2 = {
 // Our paddle
 const paddle = {
     x: 300,
-    y: 280,
-    width: 80,
-    height: 10
+    y: 200,
+    width: 30,
+    height: 8
 };
 
 /**
@@ -40,7 +40,7 @@ function setup() {
 
 function createEnemy() {
     return {
-        x: random (20, width - 20),
+        x: random (60, width - 60),
         y: 0,
         width: 14,
         height: 15,
@@ -52,19 +52,62 @@ function createEnemy() {
 }
 
 /**
- * Move and display the ball and paddle
+ * Move and spawn   the enemies and the paddle
 */
 function draw() {
     frameRate(25)
   background(r, 0, 20 - r);
   r = (r + 5) %255;
+//alert! code red!
+
+fill("#ffefef");
+text("CODE RED!!!", 300, 20);
+textAlign(CENTER, CENTER);
+textSize(20);
+textStyle(normal);
+//spaceship walls
+  fill("grey");
+  rect(0, 0, 50, 300);
+  fill("grey");
+  rect( 550,0,50,300);
+push();
+
+//human face
+  fill("#619fc9");
+  stroke("white");
+  strokeWeight(4);
+  ellipse(300, 280, 40, 40);
+
+  //face of the humann
+  fill("black");
+  noStroke();
+  textStyle(normal);
+  textSize(16);
+  textAlign(CENTER, CENTER);
+  text("0_0'", 300, 280);
+
+  fill("white");
+  noStroke();
+  rect(309, 295, 50, 10);
+  pop();
+
+
 
     movePaddle(paddle);
-
+//to see if framecount is divisible by 25 = making enemies spawn each second
    if (frameCount % 25 === 0) {
     enemies.push(createEnemy());
    }
+
+   for (let enemy of enemies) {
+    moveBall(enemy);
+    handleBounce(enemy, paddle);
+    drawBall(enemy);
+   }
+
+   drawPaddle(paddle);
 }
+
 
 
 /**
@@ -82,6 +125,14 @@ function movePaddle(paddle) {
 function moveBall(ball) {
     ball.x += ball.velocity.x
     ball.y += ball.velocity.y
+
+    if (ball.x <= 57 || ball.x >= 543) {
+    ball.velocity.x *= -1;}
+}
+
+//enemies react walls
+if (ball.x <= 57 || ball.x >= 543) {
+    ball.velocity.x *= -1;
 }
 
 /**
@@ -112,26 +163,19 @@ function drawPaddle(paddle) {
     push();
     rectMode(CENTER);
     noStroke();
-    fill("black");
+    fill("white");
     rect(paddle.x, paddle.y, paddle.width, paddle.height);
     pop();
 }
 
 /**
- * Draws the specified ball on the canvas
+ * Draws the balls /enemies
  */
 function drawBall(ball) {
     push();
     rectMode(CENTER);
-    noStroke();
-    fill("black");
+    stroke("black");
+    fill("green");
     rect(ball.x, ball.y, ball.width, ball.height);
     pop();
 }
-
-/**
- * Returns true if rectA and rectB overlap, and false otherwise
- * Assumes rectA and rectB have properties x, y, width and height to describe
- * their rectangles, and that rectA and rectB are displayed CENTERED on their
- * x,y coordinates.
- */
