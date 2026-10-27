@@ -46,7 +46,7 @@ function setup() {
 */
 function draw() {
     
-    background("#FFFFFF");
+    background("#407265");
 
     push();
     noStroke();
@@ -76,4 +76,8 @@ function draw() {
 function mousePressed() {
     const d = dist(mouseX, mouseY, ball.x, ball.y);
     const overlap = (d < ball.size / 2);
+    
+
+
 }
+
