@@ -112,7 +112,7 @@ This place keeps information about my prototyping projects
 
 ### [Link to my reflective journal](./journal.md)
 
-## *Fucntion Prototypes*
+## *Function Prototypes*
 
 ![Banner](images/protecthuman.png)
 
