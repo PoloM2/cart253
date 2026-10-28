@@ -128,7 +128,7 @@ This place keeps information about my prototyping projects
 [code](https://github.com/PoloM2/cart253/blob/main/topics/Prototypes-functions/functions-prototype-2//js/script.js)
 
 
-![Banner](images/.png)
+![Banner](images/rainbowballz.png)
 
 [Online](https://polom2.github.io/cart253/topics/Prototypes-functions/functions-prototype-3/)
 
