@@ -9,6 +9,8 @@
 let r = 0
 // Our ball
 let enemies = [];
+let speedBoost = 0;
+
 
 //ball numnber 2
 const ball2 = {
@@ -39,6 +41,9 @@ function setup() {
 
 
 function createEnemy() {
+
+    speedBoost += 20
+
     return {
         x: random (60, width - 60),
         y: 0,
@@ -124,7 +129,7 @@ function movePaddle(paddle) {
  */
 function moveBall(ball) {
     ball.x += ball.velocity.x
-    ball.y += ball.velocity.y
+    ball.y += ball.velocity.y + speedBoost
 
     if (ball.x <= 57 || ball.x >= 543) {
     ball.velocity.x *= -1;}
