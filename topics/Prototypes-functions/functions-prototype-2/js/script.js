@@ -41,7 +41,6 @@ function draw() {
     
     fill("black");
     noStroke();
-    strokeWeight(0.5);
     textSize(25);
     textStyle(normal);
     textAlign(CENTER, CENTER);
