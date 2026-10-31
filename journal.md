@@ -72,9 +72,6 @@
     Marko
 
 
-
-    # reflective journal 6
-
     ## October 27 2026
 
     # Reflective Journal 6
