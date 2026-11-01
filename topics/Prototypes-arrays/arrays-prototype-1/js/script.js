@@ -1,5 +1,5 @@
     /**
-     * Boingo
+     * zombz
      * Pippin Barr
      *
      * A ball that bounces around on the canvas
@@ -31,8 +31,8 @@
         x: mouseX,
         y: mouseY,
         size: 20,
-        // Colour
-        fill: balls.length === 0 ? "red" : "white",
+        // Colour intersting shortcut for if/else
+        fill: balls.length === 0 ? "red" : "white", //checks if array has 0 balls, if so makes the frist ball red, then since the array is nt at zero the rest will alwways be zero. 
         // Movement
         velocity: {
         x: random(-5, 5),
@@ -46,7 +46,7 @@
      * Moves and draws the ball
      */
     function draw() {
-    background("#87ceeb");
+    background("#295a1a");
     
 
     for (let ball of balls){
