@@ -1,8 +1,8 @@
     /**
      * zombz
-     * Pippin Barr
+     * Marko
      *
-     * A ball that bounces around on the canvas
+     * A ball that bounces around on the canvas and infects the following balls that get added to the array
      */
 
     const balls = [];

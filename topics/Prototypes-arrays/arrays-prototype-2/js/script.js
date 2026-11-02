@@ -1,18 +1,24 @@
 /**
- * Title of Project
- * Author Name
+ * npc
+ * Marko
  * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * with the press of the Spacebar, making the character display different texts, all being added to an array.
+ * 
  */
 
 "use strict";
 
 /**
- * OH LOOK I DIDN'T DESCRIBE SETUP!!
+ *blue canvas 500x500 bgd, 
 */
-function setup() {
 
+//makes an array for the npc's messages
+let messages = ["I'm Tired!", "The weight is to heavy", "Hello there!", "okay relax man", "really dude??"];
+let currentMessage = "Press SPACEBAR !";
+
+
+function setup() {
+createCanvas(500, 500);
 }
 
 
@@ -20,5 +26,25 @@ function setup() {
  * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
 */
 function draw() {
+
+    background(30);
+    // face
+    fill("#f5b746");
+    circle(250,200,100);
+    //eyes
+    fill("black");
+    circle(230, 190,10);
+    circle(270, 190,10);
+    //mouth
+    noFill();
+    stroke("black");
+    arc(250,215,40,25,0,PI);
+
+
+    fill("white");
+    noStroke();
+    textAlign(CENTER);
+    textSize(18);
+    text(currentMessage, 250, 350);
 
 }
