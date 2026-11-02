@@ -13,7 +13,7 @@
 */
 
 //makes an array for the npc's messages
-let messages = ["I'm Tired!", "The weight is to heavy", "Hello there!", "okay relax man", "really dude??"];
+let messages = ["I'm Tired!", "Take a break", "Hello there!", "Take a breath", "SURPRISE MF!!!!", "ANOTHER OFF SUBJECT MESSAGE"];
 let currentMessage = "Press SPACEBAR !";
 
 
@@ -39,12 +39,21 @@ function draw() {
     noFill();
     stroke("black");
     arc(250,215,40,25,0,PI);
-
-
+    //instructions
     fill("white");
     noStroke();
     textAlign(CENTER);
     textSize(18);
     text(currentMessage, 250, 350);
+}
+
+//space bar function
+
+function keyPressed() {
+    if (key === " "){
+ 
+    let index = floor(random(messages.length));
+    currentMessage = messages[index];
+    }
 
 }

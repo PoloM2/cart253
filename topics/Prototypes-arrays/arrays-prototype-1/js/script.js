@@ -38,7 +38,7 @@
         x: random(-5, 5),
         y: random(-5, 5)
         }
-    };
+    }
     return newBall;
     }
 
