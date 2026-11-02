@@ -1,15 +1,14 @@
 /**
  * Title of Project
- * Author Name
+ * Marko 
  * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * an array containing sounds mp3 probably, randomly suffled and played by the mousePressed function
  */
 
 "use strict";
 
 /**
- * OH LOOK I DIDN'T DESCRIBE SETUP!!
+ * maybe a background and some kind of draw of a instrument?
 */
 function setup() {
 
@@ -17,7 +16,7 @@ function setup() {
 
 
 /**
- * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
+ * It will display a instrument or something to correlate with the sounds
 */
 function draw() {
 
