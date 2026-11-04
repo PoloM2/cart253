@@ -1,6 +1,6 @@
-    # Reflective Journal 1
+# Reflective Journal 1
 
-    ## 15 September 2026
+## 15 September 2026
 
     While making my website with Markdown and GitHub, I was surprised that the website was coming to life from my README.md file. I thought I would have to code a lot more or do something more complicated. It was actually simpler than I expected.
 
@@ -15,9 +15,9 @@
     ![Banner](images/screenshot.png)
 
 
-    # Reflective Journal 2
+# Reflective Journal 2
 
-    ## 22 September 2026
+ ## 22 September 2026
 
     I learned a lot more about coding while working on my prototypes. The variables challenge was definitely tougher when I wanted to make things more “spicy” and add more interesting effects. It made me understand better how variables can control different parts of a project.
 
@@ -31,9 +31,9 @@
 
     Marko
 
-    # Reflective Journal 3
+# Reflective Journal 3
 
-    ## 29 September 2026
+## 29 September 2026
 
     I learned more about coding through my prototypes, especially syntax and variables. I also learned how to add images using different let variables and functions.
 
@@ -43,9 +43,9 @@
 
     Marko
 
-    # Reflective Journal 4
+ # Reflective Journal 4
 
-    ## 6 october 2026
+ ## 6 october 2026
 
     I learned more about conditionals and how text can be added to my prototypes. I learned how to use text functions to add instructions and small details to the screen, like the “STASH THE CASH!” header and the face on the character. It made my prototypes feel more complete and interactive.
 
@@ -56,10 +56,9 @@
     Overall, I am slowly becoming more comfortable with JavaScript and making interactive drawings. I still have a lot to learn, but troubleshooting and experimenting with different ideas is helping me understand the code better.
 
     Marko
+  # Reflective Journal 5
 
-    # Reflective Journal 5
-
-    ## 13 october 2026
+## 13 october 2026
 
     I learned more about conditionals and how to add text to my prototypes. Adding instructions like “STASH THE CASH!” and giving my character a face made the project feel more complete and gave it more personality. I realized that even small details can help communicate an idea and make an interactive drawing more interesting.
 
@@ -72,9 +71,8 @@
     Marko
 
 
-    ## October 27 2026
-
-    # Reflective Journal 6
+    ## October 20 2026
+# Reflective Journal 6
 
 ## 27 October 2026
 
@@ -88,5 +86,21 @@ I worked on Rainbowballz, where I experimented with random colors, bouncing ball
 Overall, these prototypes helped me understand functions better and become more independent with JavaScript. I still struggle sometimes, but I feel more confident experimenting with my ideas.
 
 Marko
+# Refectlive Journal 7
+## 3 November 2026
+
+## Journal Entry – Arrays
+
+For this assignment, I worked on three different prototypes using arrays. I wanted to take some of the ideas from my previous projects and experiment with them in different ways.
+
+For my first prototype, I reused the bouncing balls idea from an earlier project. This time, I experimented with making the balls interact with each other. I wanted one ball to spread its colour to the others when they collided. This helped me understand how arrays can store multiple objects and how I can use loops to check interactions between them.
+
+For my second prototype, I created a character that displays different messages when the spacebar is pressed. I used an array to store the messages and `random()` to select one each time. I liked this idea because it was simple but gave the character a bit of personality. It also helped me understand how to access specific elements inside an array using an index.
+
+For my third prototype, I wanted to experiment with sound. I created MemeBOX, which was supposed to play a random sound effect whenever the mouse is pressed. I used an array to store the sounds and tried using `loadSound()` to load them into the project. Unfortunately, I ran into problems getting the audio to play. It was frustrating because I spent quite some time checking the file paths and trying to figure out what was wrong, but I couldn't get it working. I look forward to fixing it another time.
+
+Overall, I found arrays useful because they let me organize multiple elements and interact with them without having to create separate variables for everything. I also noticed that combining arrays with things I already learned, like functions, loops and events, opens up more possibilities for my prototypes. I still need more practice, but I feel like I understand their purpose better now.
+
+
 
 
