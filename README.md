@@ -153,7 +153,7 @@ This place keeps information about my prototyping projects
 [code](https://github.com/PoloM2/cart253/blob/main/topics/Prototypes-arrays/arrays-prototype-2//js/script.js)
 
 
-![Banner](images/rainbowballz.png)
+![Banner](images/memebox.png)
 
 [Online](https://polom2.github.io/cart253/topics/Prototypes-arrays/arrays-prototype-3/)
 
