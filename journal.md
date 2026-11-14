@@ -101,6 +101,22 @@ For my third prototype, I wanted to experiment with sound. I created MemeBOX, wh
 
 Overall, I found arrays useful because they let me organize multiple elements and interact with them without having to create separate variables for everything. I also noticed that combining arrays with things I already learned, like functions, loops and events, opens up more possibilities for my prototypes. I still need more practice, but I feel like I understand their purpose better now.
 
+# Final Reflective Journal Part 1
+## 14 November 2026
+
+### Planning and brianstorm
+
+As I begin planning and brainstorming for my final prototype, my main goal is to bring together everything I have learned both inside and outside of class into one cohesive project. Looking back at my earlier journals, I can see how much my understanding of JavaScript has grown since I started with basic Markdown pages and simple variables, eventually moving on to conditionals, custom functions, collision logic, and arrays. For this final project, I want to combine these foundational tools with new techniques while also tackling the challenges that gave me trouble before. One of my top technical priorities is finally fixing and mastering loadSound(), building on the audio experiments from my last prototype so I can properly implement sound effects alongside a dedicated background music theme. Adding responsive audio will make the experience feel much more alive and polished, especially when paired with the interactive visuals, custom text, and dynamic color changes I practiced in projects like Protect the Human, Moodz, and Rainbowballz. Before jumping straight into writing complex code, however, I am starting with the basics of visual planning by establishing a clear design direction, choosing a cohesive color palette, and putting together a moodboard. Rather than just building a generic, simple minigame, I want my prototype to have a recurring theme and a meaningful message behind it, because throughout this semester I have realized that small artistic details—like giving a character a distinct expression or crafting thoughtful on-screen text—are what truly communicate an idea and connect with the viewer. By anchoring my code in a strong concept from day one, I hope to create something that reflects my growth as both a coder and an artist. At the same time, my biggest challenge during this planning phase is managing my ambition, as I have been told that I tend to overcomplicate my ideas and reach too far given the short amount of time we have left. With my other classes also nearing the end of the semester, my schedule is getting tight, and I know I cannot afford to get stuck troubleshooting overly complex systems at the last minute. To stay on track, I am going to rely on the iterative approach that helped me in earlier assignments by starting with a clean, working core prototype first. Once the basic mechanics, file pathways, and sound functions are working properly, I can gradually layer in extra polish and "spicy" details if time allows. By balancing creative ambition with realistic planning, I feel confident that I can finish the semester with an interactive project I am genuinely proud of.
+
+Marko
+
+# Final Reflective Journal Part 2
+## 18 November 2026
+
+### Mid completion
 
 
+# Final Reflective Journal Part 3
+## 22 November 2026
 
+### Mid completion
