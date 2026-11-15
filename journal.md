@@ -125,7 +125,7 @@ Sepaking of the close ups of the animals, i realised its simper andunavoidable f
     w:600,
     h:350,
 }; // this will hopefully serve as an area where if the mouse overlaps and mousePressed are both valid, then it will change the ''let scene =' to '=2').
-
+ genesis : i i wnet on pinterest and looked at nature art and slowly started puttign together a story just by looking at ppicture and took a bunch of oppicture i want to inpoire myself from like a tree or a view of nature, i used my past projecct of the mouse cursor, functions, arrays, lets, loadSound, instructions with texts, conditionals and variables from my previous prototypes. I am mostly so far proud of the highlighting of object when hovering over them and the text appearing with a background box behind the text aswell, even the fact that i was able to add sets of scenes that will be drwan depending on what the mouse presses on. for analysis, i want it to be immersivewith carefully picked sound tracks and sound effects, i am trying to accomplish the whole load sound and learn how to successfully implement it into my project as i failed in my 3rd arrays prototype. I found plenty of ideas i wanted to explore in the past and now have the chance, i want a broader theme then my last projects as its a larger scale prototype and i will borrow some previous code that i already used in some of my prototypes.
 
 # Final Reflective Journal Part 3
 ## 22 November 2026
