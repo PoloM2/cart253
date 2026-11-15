@@ -238,6 +238,24 @@ background("rgb(245, 166, 245)");
     bezier(550, 180, 650, 350, 800, 500, 900, 800);
     noStroke();
 
+    //THE DENS IN QUESTION
+    let hoveringBear = mouseOverBox(bearDen);
+    let hoveringFox  = mouseOverBox(foxDen);
+    let hoveringRabbit = mouseOverBox(rabbitDen);
+    let hoveringBadger = mouseOverBox(badgerDen);
+
+//Same principle as tree and bushes
+    if (hoveringBear || hoveringFox || hoveringRabbit || hoveringBadger) {
+        cursor(HAND);
+    } else {
+        cursor(ARROW);
+    }
+
+//bear deen/home if ture then itll be a ceertain color if not then another
+    fill(hoveringBear ? "rgb(200, 130, 70)" : "rgb(150, 90, 45)");
+    ellipse(bearDen.x + bearDen.w/2, bearDen.y + bearDen.h/2, bearDen.w, bearDen.h);
+    fill("rgb(35, 12, 20)");
+    ellipse(bearDen.x + bearDen.w/2, bearDen.y + bearDen.h/2, bearDen.w - 30, bearDen.h - 30);
 
 }
 
@@ -271,6 +289,15 @@ function mousePressed() {
     } else if ( scene === 2 && isMouseOverTree()) {
         scene = 3;
     }
+}
+
+function mouseOverBear(bear) {
+    return (
+        mouseX > bear.x &&
+        mouseX < bear.x + bear.w &&
+        mouseY > bear.y &&
+        mouseY < bear.y + bear.h
+    );
 }
 
 
