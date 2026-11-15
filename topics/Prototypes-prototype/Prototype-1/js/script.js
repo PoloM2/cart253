@@ -21,6 +21,12 @@ let treeArea = {
     h: 580, 
 }
 
+//animal homes/dens
+let bearDen = { x: 260, y: 720, w: 260, h: 180 };
+let foxDen  = { x: 630, y: 650, w: 180, h: 130 };
+let rabbitDen = { x: 300, y: 480, w: 150, h: 110 };
+let badgerDen = { x: 120, y: 520, w: 150, h: 120 };
+
 /**
  * scenes 1 to 3 ( maybe the scenes where a clsoe uop of the animal is drawn and it talkwith a text bubble)
 */
@@ -146,7 +152,7 @@ function drawScene2() {
     noStroke();
     fill("#7e657c");
     rect(140, 640, 50, 480);
-    rect(880, 670, 50, 450);
+    rect(880, 670, 50, 450); 
 
     fill("#2d3a2e");
     rect(110, 540, 100, 100);
@@ -231,7 +237,6 @@ background("rgb(245, 166, 245)");
     bezier(450, 180, 350, 350, 200, 500, 100, 800);
     bezier(550, 180, 650, 350, 800, 500, 900, 800);
     noStroke();
-
 
 
 }
