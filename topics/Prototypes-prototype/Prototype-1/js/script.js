@@ -251,12 +251,55 @@ background("rgb(245, 166, 245)");
         cursor(ARROW);
     }
 
-//bear deen/home if ture then itll be a ceertain color if not then another
-    fill(hoveringBear ? "rgb(200, 130, 70)" : "rgb(150, 90, 45)");
+// --- BEAR DEN (Bottom Center-Left) ---
+    fill(hoveringBear ? 100 : 75, 30, 45); // Highlights when hovered
     ellipse(bearDen.x + bearDen.w/2, bearDen.y + bearDen.h/2, bearDen.w, bearDen.h);
-    fill("rgb(35, 12, 20)");
+    fill(35, 12, 20); // Inner cave hollow
     ellipse(bearDen.x + bearDen.w/2, bearDen.y + bearDen.h/2, bearDen.w - 30, bearDen.h - 30);
+    // Sleeping Bear shape
+    fill(160, 95, 50);
+    ellipse(360, 790, 140, 85); // body
+    circle(290, 785, 55);       // head
 
+    // --- FOX DEN (Middle Right) ---
+    fill(hoveringFox ? 100 : 75, 30, 45);
+    ellipse(foxDen.x + foxDen.w/2, foxDen.y + foxDen.h/2, foxDen.w, foxDen.h);
+    fill(35, 12, 20);
+    ellipse(foxDen.x + foxDen.w/2, foxDen.y + foxDen.h/2, foxDen.w - 25, foxDen.h - 25);
+    // Sleeping Fox shape
+    fill(210, 110, 50);
+    ellipse(720, 705, 85, 45);
+    triangle(670, 715, 660, 685, 690, 700); // ears/head
+
+    // --- RABBIT DEN (Middle Left) ---
+    fill(hoveringRabbit ? 100 : 75, 30, 45);
+    ellipse(rabbitDen.x + rabbitDen.w/2, rabbitDen.y + rabbitDen.h/2, rabbitDen.w, rabbitDen.h);
+    fill(35, 12, 20);
+    ellipse(rabbitDen.x + rabbitDen.w/2, rabbitDen.y + rabbitDen.h/2, rabbitDen.w - 25, rabbitDen.h - 25);
+    // Sleeping Rabbit shape
+    fill(200, 140, 90);
+    ellipse(375, 530, 70, 45);
+    circle(345, 515, 30);
+
+    // --- BADGER DEN (Far Left) ---
+    fill(hoveringBadger ? 100 : 75, 30, 45);
+    ellipse(badgerDen.x + badgerDen.w/2, badgerDen.y + badgerDen.h/2, badgerDen.w, badgerDen.h);
+    fill(35, 12, 20);
+    ellipse(badgerDen.x + badgerDen.w/2, badgerDen.y + badgerDen.h/2, badgerDen.w - 25, badgerDen.h - 25);
+    // Sleeping Badger shape
+    fill(80, 80, 90);
+    ellipse(195, 575, 75, 50);
+    circle(160, 565, 32);
+
+    // Instruction Banner at the bottom
+    rectMode(CENTER);
+    fill(0, 180);
+    noStroke();
+    rect(width / 2, 950, 550, 45, 10);
+    fill(255);
+    textAlign(CENTER);
+    textSize(20);
+    text("Click a sleeping animal to wake them and listen...", width / 2, 957);
 }
 
 
