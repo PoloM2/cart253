@@ -6,7 +6,13 @@
  */
 
 "use strict";
-
+//backward buton from animal to roots scene
+let backButton = {
+    x: 50,
+    y: 50,
+    w: 120,
+    h: 50
+}
 let scene = 1 // sets scene value to one so it always starts with the bushes where you click and get lead to the second scene.
 let bushArea = {
     x:150,
@@ -371,10 +377,24 @@ function drawScene3() {
     noFill;
     line(500, 600, 500, 700);
 
+    //backward button 
+    let hoveringBack = isMouseOverBackButton();
 
+    if (hoveringBack) {
+        cursor(HAND);
+        fill(188, 5, 56)
+    }
+
+    rectMode(CORNER);
+    noStroke();
+    rect(backButton.x, backButton.y, backButton.w, backButton.h, 10); // an extra category after the height gives it a bevling for rounded corners,
     
-    
-    
+    //I should add a text for the button
+    fill("White");
+    textAlign(CENTER, CENTER);
+    textSize(18);
+    text("← Back", backButton.x + backButton.w / 2, backButton.y + backButton.h / 2);
+
     }
 //
 
@@ -407,6 +427,19 @@ function isMouseOverDen() {
     );
 
 }
+
+//testing for the backward button
+
+function isMouseOverBackButton() {
+    return (
+        mouseX > backButton.x &&
+        mouseX < backButton.x + backButton.w &&
+        mouseY > backButton.y &&
+        mouseY < backButton.y + backButton.h
+    );
+}
+
+
 //this will enable mouse click if the cursor overalps with bushes and if scene is equal to 1, whihch it wil be, it should then shift to the next draw ( aka scene 2)
 
 function mousePressed() {
@@ -416,6 +449,8 @@ function mousePressed() {
         scene = 3;
     } else if (scene === 3 && isMouseOverDen()) {
         scene = 4;
+    } else if (scene === 4 && isMouseOverBackButton()) {
+        scene = 3; //this will hopefully bring me back to the previous scene
     }
 }
 
