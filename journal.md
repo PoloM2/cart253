@@ -140,6 +140,11 @@ Sepaking of the close ups of the animals, i realised its simper andunavoidable f
 
         this makes me wonder how i can  use it this logic in a larger scale for bigger concepts. For now im planning on using it to make all dens in a much easier fashion.
 
+        added the back button
+will style later and maybe add some for the other scenes, it gives this kind of mystery game where you have to go back and find clues.
+
+After some trouble with the overlap and hover mechanics i finally understood the full logic behind mouse hovering an object works. Also touched up on the first scene and made lots of adjustements
+
 # Final Reflective Journal Part 3
 ## 22 November 2026
 
