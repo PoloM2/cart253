@@ -140,7 +140,7 @@ function drawScene1() {
 // SCENE 2
 
 function drawScene2() {
-     rectMode(CORNER); // so apperently rectMode(CENTER) is a global setting and i realised I need to adjust from the start by using CORNER and so forth
+    rectMode(CORNER); // so apperently rectMode(CENTER) is a global setting and i realised I need to adjust from the start by using CORNER and so forth
     background("rgb(245, 166, 245)");
 
     //gradiant effect simple my way
@@ -216,7 +216,7 @@ function drawScene2() {
 
 function drawScene3() {
     rectMode(CORNER);
-background("rgb(75, 50, 27)");
+    background("rgb(75, 50, 27)");
 
     //gradiant effect simple my way
     noStroke();
@@ -255,15 +255,6 @@ background("rgb(75, 50, 27)");
     fill(35, 12, 20);
     ellipse(denArea.x + denArea.w / 2, denArea.y + denArea.h / 2, denArea.w - 40, denArea.h - 40);
 
-
-
-
-
-
-
-
-
-
 //definitely reusing this for the other amimals
 //the bear (to move around) i drew this after the the highlight and instructions and it was making the position of the bear move when i would hover so that makes more sense now.
     let denCenterX = denArea.x + denArea.w / 2;
@@ -298,36 +289,93 @@ background("rgb(75, 50, 27)");
     noStroke();
 
 
-
-
-
-
     // I wanted to move around the den and the text but it's not effiecient enough to always play with the coordinates and try to align them each time so i am going to make 2 variable to calculate the x1&xx2 and y1&y2 of the den area added and div by 2 to center it and added + 40 to make sure its lower then the actual den
     // Instruction Banner at the bottom when hovering
     if (hoveringDen) {
-        rectMode(CENTER);
-        fill(0, 150);
-        noStroke();
+    rectMode(CENTER);
+    fill(0, 150);
+    noStroke();
         
-        // Calculate center based on the den's new position
-        let bannerX = denArea.x + denArea.w / 2; // this should make it center everytime
-        let bannerY = denArea.y + denArea.h + 40; // right under the den as i said
+    // Calculate center based on the den's new position
+    let bannerX = denArea.x + denArea.w / 2; // this should make it center everytime
+    let bannerY = denArea.y + denArea.h + 40; // right under the den as i said
         
-        rect(bannerX, bannerY, 440, 40, 10);
+    rect(bannerX, bannerY, 440, 40, 10);
         
-        fill(255);
-        textAlign(CENTER);
-        textSize(18);
-        text("Click a sleeping animal to wake them and listen...", bannerX, bannerY + 6);
+    fill(255);
+    textAlign(CENTER);
+    textSize(18);
+    text("Click a sleeping animal to wake them and listen...", bannerX, bannerY + 6);
     }
-
-    
-
-
-    
-
+//BEAR CLOSE UP SCENE
 }
+  function drawSceneBear() {
+    // I want the face to be a big ellipse, same colors. so ill reuse the previous code based on my needs. this time hopefully it will actually look like a bear.
+    rectMode(CORNER);
+    background("rgb(75, 50, 27)");
+    fill("rgb(60, 30, 35)");
+    ellipse(500, 500, 700, 600);
+    //ears went pretty smoothly
+    fill("rgb(60, 30, 35)");
+    ellipse(250, 250, 300, 300);
+    ellipse(750, 250, 300, 300);
+    //inside of the ears
+    fill("rgb(31, 15, 18)");
+    ellipse(250, 250, 200, 200);
+    ellipse(750, 250, 200, 200);
+    //ended up moving the head to the front 
+    //the ears look more realistic and it is satisfying
+    fill("rgb(60, 30, 35)");
+    ellipse(500, 500, 700, 600);
+    //nose same code as ealier for color
+    fill(20, 10, 15);
+    ellipse(500, 600, 200, 100);
+    //eyes
+    fill("black");
+    //left eye
+    ellipse(345, 400, 110, 110);
+    //right eye
+    ellipse(645, 400, 110, 110);
+    //details eyes
+    fill("white");
+    //left eye detail
+    ellipse(370, 380, 20, 20);
+    //rigth eye detail
+    ellipse(670, 380, 20, 20);
+    //left eye detail 2
+    ellipse(330, 400, 50, 50);
+    //rigth eye detail 2
+    ellipse(630, 400, 50, 50); 
+    //same as mouth for previous scene but with a twist
+    //upper lips
+    stroke(20, 10, 15);
+    strokeWeight(8);
+    noFill();
+    arc(435, 700, 120, 54, 0, PI);
+    noStroke();
 
+    stroke(20, 10, 15);
+    strokeWeight(8);
+    noFill();
+    arc(565, 700, 120, 54, 0, PI);
+    noStroke();
+    //bottom lip
+    stroke(20, 10, 15);
+    strokeWeight(7);
+    noFill();
+    arc(500, 750, 80, 34, 0, PI);
+    noStroke();
+
+    stroke(20, 10, 15);
+    strokeWeight(7);
+    noFill;
+    line(500, 600, 500, 700);
+
+
+    
+    
+    
+    }
 //
 
 
@@ -349,7 +397,16 @@ function isMouseOverTree() {
         mouseY < treeArea.y + treeArea.h
     );
 }
+//testing if the den area will work
+function isMouseOverDen() {
+    return (
+        mouseX > denArea.x &&
+        mouseX < denArea.x + denArea.w &&
+        mouseY > denArea.y &&
+        mouseY < denArea.y + denArea.h
+    );
 
+}
 //this will enable mouse click if the cursor overalps with bushes and if scene is equal to 1, whihch it wil be, it should then shift to the next draw ( aka scene 2)
 
 function mousePressed() {
@@ -361,13 +418,4 @@ function mousePressed() {
         scene = 4;
     }
 }
-//testing if the den area will work
-function isMouseOverDen() {
-    return (
-        mouseX > denArea.x &&
-        mouseX < denArea.x + denArea.w &&
-        mouseY > denArea.y &&
-        mouseY < denArea.y + denArea.h
-    );
 
-}
