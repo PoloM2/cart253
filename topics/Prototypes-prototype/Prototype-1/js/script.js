@@ -22,10 +22,12 @@ let treeArea = {
 }
 
 //animal homes/dens
-let bearDen = { x: 260, y: 720, w: 260, h: 180 };
-let foxDen  = { x: 630, y: 650, w: 180, h: 130 };
-let rabbitDen = { x: 300, y: 480, w: 150, h: 110 };
-let badgerDen = { x: 120, y: 520, w: 150, h: 120 };
+let denArea = {
+    x: 50,
+    y: 350,
+    w: 300,
+    h: 200
+}
 
 /**
  * scenes 1 to 3 ( maybe the scenes where a clsoe uop of the animal is drawn and it talkwith a text bubble)
@@ -214,21 +216,16 @@ function drawScene2() {
 
 function drawScene3() {
     rectMode(CORNER);
-background("rgb(245, 166, 245)");
+background("rgb(75, 50, 27)");
 
     //gradiant effect simple my way
     noStroke();
-    fill("rgb(252, 224, 252)");
-    ellipse(500, 110, 1300, 350);
-    fill("rgb(245, 186, 245)");
-    ellipse(500, 320, 1300, 300);
-
-    //tree trunk
-    fill(85, 48, 58);
-    noStroke();
-    rect(420, 0, 160, 420);
     
-    //roots
+    fill("rgb(138, 5, 56)");
+    ellipse(500, 90, 1300, 270);
+
+    
+    //roots using bezier for the first time from p5js
     stroke(40, 15, 25);
     strokeWeight(12);
     noFill();
@@ -238,71 +235,65 @@ background("rgb(245, 166, 245)");
     bezier(550, 180, 650, 350, 800, 500, 900, 800);
     noStroke();
 
-    //THE DENS IN QUESTION
-    let hoveringBear = mouseOverBox(bearDen);
-    let hoveringFox  = mouseOverBox(foxDen);
-    let hoveringRabbit = mouseOverBox(rabbitDen);
-    let hoveringBadger = mouseOverBox(badgerDen);
+        //tree trunk
+    fill(85, 48, 58);
+    noStroke();
+    rect(410, 0, 180, 228);
 
-//Same principle as tree and bushes
-    if (hoveringBear || hoveringFox || hoveringRabbit || hoveringBadger) {
+    //THE DENS IN QUESTION
+    let hoveringDen = isMouseOverDen();
+    if (hoveringDen) {
         cursor(HAND);
+        fill(200, 120, 130);
     } else {
         cursor(ARROW);
+        fill(120, 60, 70);
+    }
+// the den using the variable's preset attributes 
+
+    ellipse(denArea.x + denArea.w / 2, denArea.y + denArea.h / 2, denArea.w, denArea.h);
+    fill(35, 12, 20);
+    ellipse(denArea.x + denArea.w / 2, denArea.y + denArea.h / 2, denArea.w - 40, denArea.h - 40);
+
+
+//the bear (to move around) i drew this after the the highlight and instructions and it was making the position of the bear move when i would hover so that makes more sense now.
+    let denCenterX = denArea.x + denArea.w / 2;
+    let denCenterY = denArea.y + denArea.h / 2;   //this will find the exact middle of my dens, doesnt matter where denArea x & y are set.
+
+
+    rectMode(CENTER);
+    fill("black");   //black for now im thinking of the bear as i go and imagining it
+    noStroke();
+    rect(50, 350, 200, 70);
+
+
+    // I wanted to move around the den and the text but it's not effiecient enough to always play with the coordinates and try to align them each time so i am going to make 2 variable to calculate the x1&xx2 and y1&y2 of the den area added and div by 2 to center it and added + 40 to make sure its lower then the actual den
+    // Instruction Banner at the bottom when hovering
+    if (hoveringDen) {
+        rectMode(CENTER);
+        fill(0, 150);
+        noStroke();
+        
+        // Calculate center based on the den's new position
+        let bannerX = denArea.x + denArea.w / 2; // this should make it center everytime
+        let bannerY = denArea.y + denArea.h + 40; // right under the den as i said
+        
+        rect(bannerX, bannerY, 440, 40, 10);
+        
+        fill(255);
+        textAlign(CENTER);
+        textSize(18);
+        text("Click a sleeping animal to wake them and listen...", bannerX, bannerY + 6);
     }
 
-// --- BEAR DEN (Bottom Center-Left) ---
-    fill(hoveringBear ? 100 : 75, 30, 45); // Highlights when hovered
-    ellipse(bearDen.x + bearDen.w/2, bearDen.y + bearDen.h/2, bearDen.w, bearDen.h);
-    fill(35, 12, 20); // Inner cave hollow
-    ellipse(bearDen.x + bearDen.w/2, bearDen.y + bearDen.h/2, bearDen.w - 30, bearDen.h - 30);
-    // Sleeping Bear shape
-    fill(160, 95, 50);
-    ellipse(360, 790, 140, 85); // body
-    circle(290, 785, 55);       // head
+    
 
-    // --- FOX DEN (Middle Right) ---
-    fill(hoveringFox ? 100 : 75, 30, 45);
-    ellipse(foxDen.x + foxDen.w/2, foxDen.y + foxDen.h/2, foxDen.w, foxDen.h);
-    fill(35, 12, 20);
-    ellipse(foxDen.x + foxDen.w/2, foxDen.y + foxDen.h/2, foxDen.w - 25, foxDen.h - 25);
-    // Sleeping Fox shape
-    fill(210, 110, 50);
-    ellipse(720, 705, 85, 45);
-    triangle(670, 715, 660, 685, 690, 700); // ears/head
 
-    // --- RABBIT DEN (Middle Left) ---
-    fill(hoveringRabbit ? 100 : 75, 30, 45);
-    ellipse(rabbitDen.x + rabbitDen.w/2, rabbitDen.y + rabbitDen.h/2, rabbitDen.w, rabbitDen.h);
-    fill(35, 12, 20);
-    ellipse(rabbitDen.x + rabbitDen.w/2, rabbitDen.y + rabbitDen.h/2, rabbitDen.w - 25, rabbitDen.h - 25);
-    // Sleeping Rabbit shape
-    fill(200, 140, 90);
-    ellipse(375, 530, 70, 45);
-    circle(345, 515, 30);
+    
 
-    // --- BADGER DEN (Far Left) ---
-    fill(hoveringBadger ? 100 : 75, 30, 45);
-    ellipse(badgerDen.x + badgerDen.w/2, badgerDen.y + badgerDen.h/2, badgerDen.w, badgerDen.h);
-    fill(35, 12, 20);
-    ellipse(badgerDen.x + badgerDen.w/2, badgerDen.y + badgerDen.h/2, badgerDen.w - 25, badgerDen.h - 25);
-    // Sleeping Badger shape
-    fill(80, 80, 90);
-    ellipse(195, 575, 75, 50);
-    circle(160, 565, 32);
-
-    // Instruction Banner at the bottom
-    rectMode(CENTER);
-    fill(0, 180);
-    noStroke();
-    rect(width / 2, 950, 550, 45, 10);
-    fill(255);
-    textAlign(CENTER);
-    textSize(20);
-    text("Click a sleeping animal to wake them and listen...", width / 2, 957);
 }
 
-
+//
 
 
 
@@ -333,14 +324,13 @@ function mousePressed() {
         scene = 3;
     }
 }
-
-function mouseOverBear(bear) {
+//testing if the den area will work
+function isMouseOverDen() {
     return (
-        mouseX > bear.x &&
-        mouseX < bear.x + bear.w &&
-        mouseY > bear.y &&
-        mouseY < bear.y + bear.h
+        mouseX > denArea.x &&
+        mouseX < denArea.x + denArea.w &&
+        mouseY > denArea.y &&
+        mouseY < denArea.y + denArea.h
     );
+
 }
-
-

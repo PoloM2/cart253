@@ -127,6 +127,19 @@ Sepaking of the close ups of the animals, i realised its simper andunavoidable f
 }; // this will hopefully serve as an area where if the mouse overlaps and mousePressed are both valid, then it will change the ''let scene =' to '=2').
  genesis : i i wnet on pinterest and looked at nature art and slowly started puttign together a story just by looking at ppicture and took a bunch of oppicture i want to inpoire myself from like a tree or a view of nature, i used my past projecct of the mouse cursor, functions, arrays, lets, loadSound, instructions with texts, conditionals and variables from my previous prototypes. I am mostly so far proud of the highlighting of object when hovering over them and the text appearing with a background box behind the text aswell, even the fact that i was able to add sets of scenes that will be drwan depending on what the mouse presses on. for analysis, i want it to be immersivewith carefully picked sound tracks and sound effects, i am trying to accomplish the whole load sound and learn how to successfully implement it into my project as i failed in my 3rd arrays prototype. I found plenty of ideas i wanted to explore in the past and now have the chance, i want a broader theme then my last projects as its a larger scale prototype and i will borrow some previous code that i already used in some of my prototypes.
 
+ // I wanted to move around the den and the text but it's not effiecient enough to always play with the coordinates and try to align them each time so i am going to make 2 variable to calculate the x1&xx2 and y1&y2 of the den area added and div by 2 to center it and added + 40 to make sure its lower then the actual den.
+ let bannerX = denArea.x + denArea.w / 2; // this should make it center everytime
+        let bannerY = denArea.y + denArea.h + 40; // right under the den as i said
+        
+        rect(bannerX, bannerY, 440, 40, 10);
+        
+        fill(255);
+        textAlign(CENTER);
+        textSize(18);
+        text("Click a sleeping animal to wake them and listen...", bannerX, bannerY + 6);
+
+        this makes me wonder how i can  use it this logic in a larger scale for bigger concepts. For now im planning on using it to make all dens in a much easier fashion.
+
 # Final Reflective Journal Part 3
 ## 22 November 2026
 
