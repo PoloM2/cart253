@@ -51,7 +51,7 @@ function draw() {
         drawScene3();
     } else if (scene === 4) {
         drawSceneBear();
-    }
+    } 
 
 
 }
@@ -256,15 +256,50 @@ background("rgb(75, 50, 27)");
     ellipse(denArea.x + denArea.w / 2, denArea.y + denArea.h / 2, denArea.w - 40, denArea.h - 40);
 
 
+
+
+
+
+
+
+
+
+//definitely reusing this for the other amimals
 //the bear (to move around) i drew this after the the highlight and instructions and it was making the position of the bear move when i would hover so that makes more sense now.
     let denCenterX = denArea.x + denArea.w / 2;
     let denCenterY = denArea.y + denArea.h / 2;   //this will find the exact middle of my dens, doesnt matter where denArea x & y are set.
 
-
+    //BEAR 
+    //body
     rectMode(CENTER);
-    fill("black");   //black for now im thinking of the bear as i go and imagining it
+    fill("rgb(60, 30, 35)");   //black for now im thinking of the bear as i go and imagining it//changed to reddish brown
+    stroke("black");
+    strokeWeight(2);
+    rect(denCenterX, denCenterY + 30, 160, 80, 25);
+    //head
+    ellipse(denCenterX - 45, denCenterY - 5, 75, 65);
+    //feet poking out at the bottom
+    fill(45, 20, 25);
+    ellipse(denCenterX - 60, denCenterY + 55, 60, 30);
+    ellipse(denCenterX + 40, denCenterY + 55, 70, 40);
+    //ears
+    fill("rgb(60, 30, 35)");
+    ellipse(denCenterX - 20, denCenterY - 30, 25, 35);
+    fill(20, 10, 15);
+    ellipse(denCenterX - 20, denCenterY - 30, 15, 25);
+    //nose
+    fill(20, 10, 15);
+    ellipse(denCenterX - 75, denCenterY - 2, 20, 20);
+    // havent used arcs in a long time but it should do the trick for eyes to look sleepy
+    stroke(20, 10, 15);
+    strokeWeight(2);
+    noFill();
+    arc(denCenterX - 60, denCenterY - 15, 14, 10, 0, PI);
     noStroke();
-    rect(50, 350, 200, 70);
+
+
+
+
 
 
     // I wanted to move around the den and the text but it's not effiecient enough to always play with the coordinates and try to align them each time so i am going to make 2 variable to calculate the x1&xx2 and y1&y2 of the den area added and div by 2 to center it and added + 40 to make sure its lower then the actual den
@@ -320,8 +355,10 @@ function isMouseOverTree() {
 function mousePressed() {
     if (scene === 1 && isMouseOverBush()) {
         scene = 2;
-    } else if ( scene === 2 && isMouseOverTree()) {
+    } else if (scene === 2 && isMouseOverTree()) {
         scene = 3;
+    } else if (scene === 3 && isMouseOverDen()) {
+        scene = 4;
     }
 }
 //testing if the den area will work
