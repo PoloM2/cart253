@@ -140,4 +140,7 @@ added more variable and stuff like:
 else if (isMouseOverBear()) {
         bearSound.play(); //this should make a sound for each time the bear's face is presssed
 
+        fixed bear sound moving to bubble
+the bear wasnt making noise when i would press on him due to me not checking if scene was equal to 4 which is the close up scene, and a type due to me pasting the same line and forget to remove part of the previous else if
+
 ### Post Completion

@@ -9,8 +9,20 @@
 //now for sound
 let song; //theme song
 let buttonClick; //mouse click
+//BEAR STUFF
 let bearSound;
-
+let bearLines = [
+    "Zzzz... Ohh, are you the masseuse I booked ?",
+    "Ah... It's you again, you look...Different...",
+    "Go bother my friends I have Honey to Taste-Test",
+    "SCRAM!",
+    "...",
+    "My man...",
+    "leave me be",
+    "i'm running out of things to say",
+    "FINE! You got me I'm too lazy, you can break the immersion"
+];
+let currentBearLine = 0;
 
 //backward buton from animal to roots scene
 let backButton = {
@@ -395,6 +407,9 @@ function drawScene3() {
     if (hoveringBack) {
         cursor(HAND);
         fill(188, 5, 56)
+    } else {
+        cursor(ARROW);
+        fill(120, 60, 70);
     }
 
     rectMode(CORNER);
