@@ -2,13 +2,15 @@
  * ROOTED
  * Marko Anastasovski
  * 
- * A scenery of bushes and trees, clciking on the bushes takee you to another view of a tall tree, click on this  tree takes you to the ROOTED TREE, wheere little animals lie and sleep within the roots, click on them to awaken them and unlock dialogue. optionally go back and click on another animal for more wisdom.
+ * A scenery of bushes and trees, clicking on the bushes takee you to another view of a tall tree, click on this  tree takes you to the ROOTED TREE, wheere little animals lie and sleep within the roots, click on them to awaken them and unlock dialogue. optionally go back and click on another animal for more wisdom.
  */
 
 "use strict";
 //now for sound
-let song;
-let buttonClick;
+let song; //theme song
+let buttonClick; //mouse click
+letbearSound;
+
 
 //backward buton from animal to roots scene
 let backButton = {
@@ -43,6 +45,7 @@ let denArea = {
 function preload() {
     song = loadSound('assets/sounds/animaljam.mp3');
     buttonClick = loadSound('assets/sounds/buttonclick.wav');
+    bearSound = loadSound('assets/sounds/bear.mp3') //bear when clicking den and on him for dialogue
 }
 /**
  * scenes 1 to 3 ( maybe the scenes where a clsoe uop of the animal is drawn and it talkwith a text bubble)
