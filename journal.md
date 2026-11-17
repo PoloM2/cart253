@@ -132,7 +132,12 @@ I am reattempting the sounds for my prototype this time making sure the path and
 
 I actually managed to make the music work, what a satisfying accomplsheement for me but not a big one at all in general, idk why im so happy probably because i was so confused as to why i never worked on my ealier prototypes. I will now attempt to make a BEAR sound effect for when the bear talks/ghets clicked on/ or when the bear den is presss and he pops up in a close up.
 
-added more variable and stuff like: } else if (scene === 3 && isMouseOverDen()) {
+added more variable and stuff like:
+
+ else if (scene === 3 && isMouseOverDen()) {
         bearSound.play();//bear sound effect when pressing on his den, a noise he will make when you get up close to him for a chat
+
+else if (isMouseOverBear()) {
+        bearSound.play(); //this should make a sound for each time the bear's face is presssed
 
 ### Post Completion

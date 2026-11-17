@@ -9,7 +9,7 @@
 //now for sound
 let song; //theme song
 let buttonClick; //mouse click
-letbearSound;
+let bearSound;
 
 
 //backward buton from animal to roots scene
@@ -451,7 +451,20 @@ function isMouseOverBackButton() {
     );
 }
 
+//adding the mouseoverbear for the sounds now
+function isMouseOverBear() {
+        let bearX = 350;
+        let bearY = 300;
+        let bearW = 300;
+        let bearH = 400;
 
+    return (
+        mouseX > bearX &&
+        mouseX < bearX + bearW &&
+        mouseY > bearY &&
+        mouseY < bearY + bearH
+    );  
+}
 //this will enable mouse click if the cursor overalps with bushes and if scene is equal to 1, whihch it wil be, it should then shift to the next draw ( aka scene 2)
 
 function mousePressed() {
@@ -467,9 +480,12 @@ function mousePressed() {
     } else if (scene === 2 && isMouseOverTree()) {
         scene = 3;
     } else if (scene === 3 && isMouseOverDen()) {
+        bearSound.play();//bear sound effect when pressing on his den, a noise he will make when you get up close to him for a chat
         scene = 4;
     } else if (scene === 4 && isMouseOverBackButton()) {
         scene = 3; //this will hopefully bring me back to the previous scene
+    } else if (scene === 4 && isMouseOverBear()) {
+        bearSound.play(); //this should make a sound for each time the bear's face is presssed
     }
 }
 
