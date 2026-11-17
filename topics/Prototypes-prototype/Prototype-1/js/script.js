@@ -18,7 +18,7 @@ let bearLines = [
     "SCRAM!",
     "...",
     "My man...",
-    "leave me be",
+    "LEAVE ME BE!",
     "i'm running out of things to say",
     "FINE! You got me I'm too lazy, you can break the immersion"
 ];
@@ -422,6 +422,9 @@ function drawScene3() {
     if (hoveringBack) {
         cursor(HAND);
         fill(188, 5, 56)
+    } else if (isMouseOverBear()) {
+        cursor(HAND);
+        fill(120, 60, 70);
     } else {
         cursor(ARROW);
         fill(120, 60, 70);
@@ -511,11 +514,13 @@ function mousePressed() {
         scene = 3;
     } else if (scene === 3 && isMouseOverDen()) {
         bearSound.play();//bear sound effect when pressing on his den, a noise he will make when you get up close to him for a chat
+        currentBearLine = 0; //sets the line its at
         scene = 4;
     } else if (scene === 4 && isMouseOverBackButton()) {
         scene = 3; //this will hopefully bring me back to the previous scene
     } else if (scene === 4 && isMouseOverBear()) {
         bearSound.play(); //this should make a sound for each time the bear's face is presssed
+        currentBearLine = (currentBearLine + 1) % bearLines.length;//thisd should make the lines cycle in order
     }
 }
 
