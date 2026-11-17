@@ -20,7 +20,8 @@ let bearLines = [
     "My man...",
     "LEAVE ME BE!",
     "i'm running out of things to say",
-    "FINE! You got me I'm too lazy, you can break the immersion"
+    "FINE! You got me I'm too lazy, you can break the immersion",
+    "I guess I'll say one more line before looping back to my original line"
 ];
 let currentBearLine = 0;
 
@@ -410,11 +411,14 @@ function drawScene3() {
     noStroke();
     fill(35, 12, 20);
     textAlign(CENTER, CENTER);
-    textSize(24);
+    textSize(40);
+    textStyle(ITALIC);
+    textFont('Courrier New');
     text(bearLines[currentBearLine], width / 2, 870);// dialogue itself
     fill(120, 60, 70);
-    textSize(16);
-    text("(Click the bear to hear more wisdom)", width / 2, 920); //instruciton to click
+    textSize(22);
+    textStyle(BOLD);
+    text("(Poke the bear to hear more 'wisdom')", width / 2, 920); //instruciton to click
 
     //backward button 
     let hoveringBack = isMouseOverBackButton();
@@ -429,7 +433,7 @@ function drawScene3() {
         cursor(ARROW);
         fill(120, 60, 70);
     }
-
+    //BACKBUTTON
     rectMode(CORNER);
     noStroke();
     rect(backButton.x, backButton.y, backButton.w, backButton.h, 10); // an extra category after the height gives it a bevling for rounded corners,

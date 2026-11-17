@@ -165,7 +165,7 @@ This place keeps information about my prototyping projects
 
 ## Final Project
 
-[Reflective Journal](./journal)
+### [Link to my reflective journal](./journal.md)
 
 ### ROOTED
 
