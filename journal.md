@@ -152,4 +152,13 @@ changed and added dialogue and mousePressed functions :    currentBearLine = 0; 
         currentBearLine = (currentBearLine + 1) % bearLines.length;//thisd should make the lines cycle in order
     }
 
+succesfully made dialogues and the all the functions wrok how i expected…
+changed and added dialogue and mousePressed functions :    currentBearLine = 0; //sets the line its at
+        scene = 4;
+    } else if (scene === 4 && isMouseOverBackButton()) {
+        scene = 3; //this will hopefully bring me back to the previous scene
+    } else if (scene === 4 && isMouseOverBear()) {
+        bearSound.play(); //this should make a sound for each time the bear's face is presssed
+        currentBearLine = (currentBearLine + 1) % bearLines.length;//thisd should make the lines cycle in order
+    }
 ### Post Completion
