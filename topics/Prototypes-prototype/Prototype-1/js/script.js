@@ -6,6 +6,10 @@
  */
 
 "use strict";
+//now for sound
+let song;
+let buttonClick;
+
 //backward buton from animal to roots scene
 let backButton = {
     x: 50,
@@ -34,7 +38,12 @@ let denArea = {
     w: 300,
     h: 200
 }
+//loads the sound
 
+function preload() {
+    song = loadSound('assets/sounds/animaljam.mp3');
+    buttonClick = loadSound('assets/sounds/buttonclick.wav');
+}
 /**
  * scenes 1 to 3 ( maybe the scenes where a clsoe uop of the animal is drawn and it talkwith a text bubble)
 */
@@ -443,6 +452,13 @@ function isMouseOverBackButton() {
 //this will enable mouse click if the cursor overalps with bushes and if scene is equal to 1, whihch it wil be, it should then shift to the next draw ( aka scene 2)
 
 function mousePressed() {
+    buttonClick.play();
+    if (!song.isPlaying()) {
+        song.loop();
+    }
+
+
+
     if (scene === 1 && isMouseOverBush()) {
         scene = 2;
     } else if (scene === 2 && isMouseOverTree()) {
