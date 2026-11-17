@@ -113,7 +113,7 @@ To stay on track, I am going to rely on the iterative approach that helped me in
 Marko
 
 # Final Reflective Journal Part 2
-## 18 November 2026
+## TBD November 2026
 
 ### Mid completion
 For this project, I wanted to build a larger-scale prototype with a broader theme than my previous ones, giving me the chance to explore plenty of ideas I had in the past. The genesis of the project came from browsing nature art on Pinterest, where I saved pictures of trees and nature views and slowly put together a story just by looking at them. The experience starts with a scenery of bushes and trees. Clicking on the bushes takes you to another view of a tall tree, and clicking on this tree takes you to the Rooted Tree, where little animals lie and sleep within the roots. You can click on them to awaken them and unlock dialogue, then optionally go back and click on another animal for more wisdom. Adding the back button made it feel like a mystery game where you have to go back and find clues, and I plan to style it later and maybe add more for the other scenes.
@@ -123,7 +123,7 @@ So far, I am mostly proud of how objects highlight when hovering over them, how 
 Marko
 
 # Final Reflective Journal Part 3
-## 22 November 2026
+## TBD November 2026
 
 I now want to ffigure out the sound and create other dens and finally before stylizing and finishing up, i want to create sound effects for the chat bubbles popping up and mulitple arrays for each animal to stimulate an immersive conversation in some minimal way with the time i have.
 

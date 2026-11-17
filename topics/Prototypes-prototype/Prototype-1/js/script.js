@@ -33,6 +33,10 @@ let backButton = {
     h: 50
 }
 let scene = 1 // sets scene value to one so it always starts with the bushes where you click and get lead to the second scene.
+//cursor mechnanics
+let cursorType = "arrow";
+
+
 let bushArea = {
     x:150,
     y:600,
