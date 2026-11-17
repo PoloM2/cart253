@@ -127,7 +127,8 @@ Marko
 
 I now want to ffigure out the sound and create other dens and finally before stylizing and finishing up, i want to create sound effects for the chat bubbles popping up and mulitple arrays for each animal to stimulate an immersive conversation in some minimal way with the time i have.
 
-
+STARTED song and sound effect
+I am reattempting the sounds for my prototype this time making sure the path and html are right, my issue is that the song only plays after the first mousePress, which is annoying and if i put it in setup() it doesn't allow it / blocked.  testing sounds and started the dialogue bbble pop up
 
 
 ### Post Completion
