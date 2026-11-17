@@ -401,6 +401,21 @@ function drawScene3() {
     noFill;
     line(500, 600, 500, 700);
 
+    //DIALOGUE
+    rectMode(CENTER);
+    fill(255, 245, 235, 235); 
+    stroke(40, 15, 25);
+    strokeWeight(4);
+    rect(width / 2, 880, 820, 130, 20); //bubble
+    noStroke();
+    fill(35, 12, 20);
+    textAlign(CENTER, CENTER);
+    textSize(24);
+    text(bearLines[currentBearLine], width / 2, 870);// dialogue itself
+    fill(120, 60, 70);
+    textSize(16);
+    text("(Click the bear to hear more wisdom)", width / 2, 920); //instruciton to click
+
     //backward button 
     let hoveringBack = isMouseOverBackButton();
 

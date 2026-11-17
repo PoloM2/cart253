@@ -143,4 +143,13 @@ else if (isMouseOverBear()) {
         fixed bear sound moving to bubble
 the bear wasnt making noise when i would press on him due to me not checking if scene was equal to 4 which is the close up scene, and a type due to me pasting the same line and forget to remove part of the previous else if
 
+changed and added dialogue and mousePressed functions :    currentBearLine = 0; //sets the line its at
+        scene = 4;
+    } else if (scene === 4 && isMouseOverBackButton()) {
+        scene = 3; //this will hopefully bring me back to the previous scene
+    } else if (scene === 4 && isMouseOverBear()) {
+        bearSound.play(); //this should make a sound for each time the bear's face is presssed
+        currentBearLine = (currentBearLine + 1) % bearLines.length;//thisd should make the lines cycle in order
+    }
+
 ### Post Completion
