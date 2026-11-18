@@ -511,7 +511,7 @@ function drawScene3() {
     fill(120, 60, 70);
     textSize(22);
     textStyle(BOLD);
-    text("(Poke the bear to hear more 'wisdom')", width / 2, 920); //instruciton to click
+    text("(Click the BEAR to hear more 'wisdom')", width / 2, 920); //instruciton to click
 
     //backward button 
     let hoveringBack = isMouseOverBackButton();
@@ -539,68 +539,52 @@ function drawScene3() {
     text("← Back", backButton.x + backButton.w / 2, backButton.y + backButton.h / 2);
 
     }
-//SCENE 5
+//SCENE 5 mole close
 
 function drawSceneMole() {
     rectMode(CORNER);
     background("rgb(75, 50, 27)");
-    fill("rgb(60, 30, 35)");
-    ellipse(500, 500, 700, 600);
-    //ears went pretty smoothly
-    fill("rgb(60, 30, 35)");
-    ellipse(250, 250, 300, 300);
-    ellipse(750, 250, 300, 300);
-    //inside of the ears
-    fill("rgb(31, 15, 18)");
-    ellipse(250, 250, 200, 200);
-    ellipse(750, 250, 200, 200);
-    //ended up moving the head to the front 
-    //the ears look more realistic and it is satisfying
-    fill("rgb(60, 30, 35)");
-    ellipse(500, 500, 700, 600);
-    //nose same code as ealier for color
-    fill(20, 10, 15);
-    ellipse(500, 600, 200, 100);
-    //eyes
+
+    // Neck 
+    fill("rgb(68, 65, 66)");
+    
+    ellipse(500, 720, 640, 560);
+
+    // Head 
+    fill("rgb(61, 56, 57)");
+    ellipse(500, 490, 580, 660);
+    //nose
+    fill("rgb(82, 75, 77)");
+    ellipse(500, 610, 250, 180);
+
+    fill("rgb(230, 146, 205)");
+    ellipse(500, 585, 115, 140);
+    fill("rgb(160, 85, 135)");
+    ellipse(478, 575, 16, 24);
+    ellipse(522, 575, 16, 24);
+    //stach
+    stroke("white");
+    strokeWeight(4);
+    line(360, 585, 260, 565);
+    line(355, 605, 250, 605);
+    line(360, 625, 260, 645);
+
+    line(640, 585, 740, 565);
+    line(645, 605, 750, 605);
+    line(640, 625, 740, 645);
+    noStroke();
+
+    // eyes
     fill("black");
-    //left eye
-    ellipse(345, 400, 110, 110);
-    //right eye
-    ellipse(645, 400, 110, 110);
-    //details eyes
-    fill("white");
-    //left eye detail
-    ellipse(370, 380, 20, 20);
-    //rigth eye detail
-    ellipse(670, 380, 20, 20);
-    //left eye detail 2
-    ellipse(330, 400, 50, 50);
-    //rigth eye detail 2
-    ellipse(630, 400, 50, 50); 
-    //same as mouth for previous scene but with a twist
-    //upper lips
-    stroke(20, 10, 15);
-    strokeWeight(8);
-    noFill();
-    arc(435, 700, 120, 54, 0, PI);
-    noStroke();
+    ellipse(390, 420, 20, 20);
+    ellipse(600, 420, 20, 20);
 
-    stroke(20, 10, 15);
-    strokeWeight(8);
-    noFill();
-    arc(565, 700, 120, 54, 0, PI);
-    noStroke();
-    //bottom lip
-    stroke(20, 10, 15);
-    strokeWeight(7);
-    noFill();
-    arc(500, 750, 80, 34, 0, PI);
-    noStroke();
 
-    stroke(20, 10, 15);
-    strokeWeight(7);
-    noFill;
-    line(500, 600, 500, 700);
+
+    // hands
+    fill("rgb(230, 146, 205)");
+    ellipse(260, 770, 110, 80);
+    ellipse(740, 770, 110, 80);
 
     //DIALOGUE
     rectMode(CENTER);
@@ -614,11 +598,11 @@ function drawSceneMole() {
     textSize(40);
     textStyle(ITALIC);
     textFont('Courrier New');
-    text(bearLines[currentBearLine], width / 2, 870);// dialogue itself
+    text(moleLines[currentMoleLine], width / 2, 870);// dialogue itself
     fill(120, 60, 70);
     textSize(22);
     textStyle(BOLD);
-    text("(Poke the bear to hear more 'wisdom')", width / 2, 920); //instruciton to click
+    text("(Click the MOLE to hear more 'confusion')", width / 2, 920); //instruciton to click
 
     //backward button 
     let hoveringBack = isMouseOverBackButton();
@@ -767,7 +751,7 @@ function mousePressed() {
         scene = 3; //brings backButton, 
     } else if (scene === 5 && isMouseOverMole()) {
         moleSound.play();
-        currentMoleLine = (currentBearLine + 1) % moleLines.length;
+        currentMoleLine = (currentMoleLine + 1) % moleLines.length;
     }
 }
 
