@@ -22,7 +22,8 @@ let bearLines = [
     "LEAVE ME BE!",
     "I'm running out of things to say",
     "FINE! Break the immersion!",
-    "Wait !!!", "Lemme say one more line before looping back!", "Have you seen Lady Gala ?","Boy I miss my Lady", "Okay go... NOW!"
+    "Wait !!!", "Lemme say one more line before looping back!", "Have you seen Lady Gala ?","Boy I miss my Lady", "Okay go... NOW!",
+    "Zzzzz..."
 ];
 let currentBearLine = 0;
 
