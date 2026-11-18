@@ -780,9 +780,10 @@ function drawHandCursor() {
     stroke("black");
     strokeWeight(1.5);
 
+    rect(-7, -17, 7, 18, 4.5);  //index i moved it up because it looked more natural
     rect(0, 18, 18, 12, 3); //wrist   
     rect(-12, 2, 14, 8, 4); //thumb
     ellipse(0, 2, 26, 26);  //hand
-    rect(-7, -14, 7, 18, 4.5);  //index
+    
     
 }
