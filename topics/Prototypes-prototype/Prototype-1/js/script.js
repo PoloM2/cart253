@@ -28,14 +28,22 @@ let bearLines = [
 let currentBearLine = 0;
 
 //MOLE STUFF
-//let animal2Sound;
+let moleSound;
 
 let moleLines = [
-    "Hoot... who wakes me from my daydream?",
-    "Placeholder wisdom 1 for Animal 2.",
-    "Placeholder wisdom 2 for Animal 2."
+    "Zzzz....galaaa",
+    "*YAWN AGGRESSIVELY*",
+    "GALAAAA!?!",
+    "Ugh... Was having the dream of me life",
+    "'Who's Gala' ?... Noone...I mean..ugh",
+    "Never heard of her, or him....",
+    "Im going back to sleep...",
+    "Take 33 away from 100, what are they?",
+    "ZZzzz....Gala?",
+    "*The mole snores and dreams...",
+    "...Of things it's never seen"
 ];
-let currentmoleLine = 0;
+let currentMoleLine = 0;
 
 
 ///ANIMAL 3 STUFF
@@ -102,6 +110,7 @@ function preload() {
     song = loadSound('assets/sounds/animaljam.mp3');
     buttonClick = loadSound('assets/sounds/buttonclick.wav');
     bearSound = loadSound('assets/sounds/bear.mp3') //bear when clicking den and on him for dialogue
+    moleSound = loadSound('assets/sounds/mole.mp3')// mole when clicking den and on him for dialogue
 }
 /**
  * scenes 1 to 3 ( maybe the scenes where a clsoe uop of the animal is drawn and it talkwith a text bubble)
@@ -323,18 +332,52 @@ function drawScene3() {
 
     //THE DENS IN QUESTION
     let hoveringDen = isMouseOverDen();
-    if (hoveringDen) {
+    let hoveringDen2 = isMouseOverDen2();
+    let hoveringDen3 = isMouseOverDen3();
+
+    if (hoveringDen || hoveringDen2 || hoveringDen3) {
         cursorType = "hand";
         fill(200, 120, 130);
     } else {
         cursorType = "arrow";
         fill(120, 60, 70);
     }
-// the den using the variable's preset attributes 
+// den 1 using the variable's preset attributes 
 
     ellipse(denArea.x + denArea.w / 2, denArea.y + denArea.h / 2, denArea.w, denArea.h);
     fill(35, 12, 20);
     ellipse(denArea.x + denArea.w / 2, denArea.y + denArea.h / 2, denArea.w - 40, denArea.h - 40);
+
+//den 2
+    if (hoveringDen2) {
+        fill(200, 120, 130);
+    } else {
+        fill(120, 60, 70);
+    }
+    ellipse(den2Area.x + den2Area.w / 2, den2Area.y + den2Area.h / 2, den2Area.w, den2Area.h);
+    fill(35, 12, 20);
+    ellipse(den2Area.x + den2Area.w / 2, den2Area.y + den2Area.h / 2, den2Area.w - 40, den2Area.h - 40);  
+//MOLE
+    let den2CenterX = den2Area.x + den2Area.w / 2;
+    let den2CenterY = den2Area.y + den2Area.h / 2;
+    fill(180, 140, 100);
+    ellipse(den2CenterX, den2CenterY + 10, 110, 70);
+
+//den 3
+
+    if (hoveringDen3) {
+        fill(200, 120, 130);
+    } else {
+        fill(120, 60, 70);
+    }
+    ellipse(den3Area.x + den3Area.w / 2, den3Area.y + den3Area.h / 2, den3Area.w, den3Area.h);
+    fill(35, 12, 20);
+    ellipse(den3Area.x + den3Area.w / 2, den3Area.y + den3Area.h / 2, den3Area.w - 40, den3Area.h - 40);
+    //Bunny
+    let den3CenterX = den3Area.x + den3Area.w / 2;
+    let den3CenterY = den3Area.y + den3Area.h / 2;
+    fill(140, 160, 130);
+    ellipse(den3CenterX, den3CenterY + 10, 110, 70);
 
 //definitely reusing this for the other amimals
 //the bear (to move around) i drew this after the the highlight and instructions and it was making the position of the bear move when i would hover so that makes more sense now.
@@ -473,6 +516,7 @@ function drawScene3() {
     //backward button 
     let hoveringBack = isMouseOverBackButton();
 
+
     if (hoveringBack) {
         cursorType = "hand";
         fill(188, 5, 56)
@@ -495,7 +539,114 @@ function drawScene3() {
     text("← Back", backButton.x + backButton.w / 2, backButton.y + backButton.h / 2);
 
     }
-//
+//SCENE 5
+
+function drawSceneMole() {
+    rectMode(CORNER);
+    background("rgb(75, 50, 27)");
+    fill("rgb(60, 30, 35)");
+    ellipse(500, 500, 700, 600);
+    //ears went pretty smoothly
+    fill("rgb(60, 30, 35)");
+    ellipse(250, 250, 300, 300);
+    ellipse(750, 250, 300, 300);
+    //inside of the ears
+    fill("rgb(31, 15, 18)");
+    ellipse(250, 250, 200, 200);
+    ellipse(750, 250, 200, 200);
+    //ended up moving the head to the front 
+    //the ears look more realistic and it is satisfying
+    fill("rgb(60, 30, 35)");
+    ellipse(500, 500, 700, 600);
+    //nose same code as ealier for color
+    fill(20, 10, 15);
+    ellipse(500, 600, 200, 100);
+    //eyes
+    fill("black");
+    //left eye
+    ellipse(345, 400, 110, 110);
+    //right eye
+    ellipse(645, 400, 110, 110);
+    //details eyes
+    fill("white");
+    //left eye detail
+    ellipse(370, 380, 20, 20);
+    //rigth eye detail
+    ellipse(670, 380, 20, 20);
+    //left eye detail 2
+    ellipse(330, 400, 50, 50);
+    //rigth eye detail 2
+    ellipse(630, 400, 50, 50); 
+    //same as mouth for previous scene but with a twist
+    //upper lips
+    stroke(20, 10, 15);
+    strokeWeight(8);
+    noFill();
+    arc(435, 700, 120, 54, 0, PI);
+    noStroke();
+
+    stroke(20, 10, 15);
+    strokeWeight(8);
+    noFill();
+    arc(565, 700, 120, 54, 0, PI);
+    noStroke();
+    //bottom lip
+    stroke(20, 10, 15);
+    strokeWeight(7);
+    noFill();
+    arc(500, 750, 80, 34, 0, PI);
+    noStroke();
+
+    stroke(20, 10, 15);
+    strokeWeight(7);
+    noFill;
+    line(500, 600, 500, 700);
+
+    //DIALOGUE
+    rectMode(CENTER);
+    fill(255, 245, 235, 235); 
+    stroke(40, 15, 25);
+    strokeWeight(4);
+    rect(width / 2, 880, 820, 130, 20); //bubble
+    noStroke();
+    fill(35, 12, 20);
+    textAlign(CENTER, CENTER);
+    textSize(40);
+    textStyle(ITALIC);
+    textFont('Courrier New');
+    text(bearLines[currentBearLine], width / 2, 870);// dialogue itself
+    fill(120, 60, 70);
+    textSize(22);
+    textStyle(BOLD);
+    text("(Poke the bear to hear more 'wisdom')", width / 2, 920); //instruciton to click
+
+    //backward button 
+    let hoveringBack = isMouseOverBackButton();
+
+
+    if (hoveringBack) {
+        cursorType = "hand";
+        fill(188, 5, 56)
+    } else if (isMouseOverBear()) {
+        cursorType = "hand";
+        fill(120, 60, 70);
+    } else {
+        cursorType = "arrow";
+        fill(120, 60, 70);
+    }
+    //BACKBUTTON
+    rectMode(CORNER);
+    noStroke();
+    rect(backButton.x, backButton.y, backButton.w, backButton.h, 10); // an extra category after the height gives it a bevling for rounded corners,
+    
+    //I should add a text for the button
+    fill("White");
+    textAlign(CENTER, CENTER);
+    textSize(18);
+    text("← Back", backButton.x + backButton.w / 2, backButton.y + backButton.h / 2);
+
+    }
+
 
 
 
@@ -526,7 +677,25 @@ function isMouseOverDen() {
     );
 
 }
+//den 2 testing
+function isMouseOverDen2() {
+    return (
+        mouseX > den2Area.x &&
+        mouseX < den2Area.x + den2Area.w &&
+        mouseY > den2Area.y &&
+        mouseY < den2Area.y + den2Area.h
+    );
+}
 
+//den 3 //
+function isMouseOverDen3() {
+    return (
+        mouseX > den3Area.x &&
+        mouseX < den3Area.x + den3Area.w &&
+        mouseY > den3Area.y &&
+        mouseY < den3Area.y + den3Area.h
+    );
+}
 //testing for the backward button
 
 function isMouseOverBackButton() {
@@ -552,6 +721,21 @@ function isMouseOverBear() {
         mouseY < bearY + bearH
     );  
 }
+
+function isMouseOverMole() {
+        let moleX = 350;
+        let moleY = 300;
+        let moleW = 300;
+        let moleH = 400;
+
+    return (
+        mouseX > moleX &&
+        mouseX < moleX + moleW &&
+        mouseY > moleY &&
+        mouseY < moleY + moleH
+    );  
+}
+
 //this will enable mouse click if the cursor overalps with bushes and if scene is equal to 1, whihch it wil be, it should then shift to the next draw ( aka scene 2)
 
 function mousePressed() {
@@ -575,6 +759,15 @@ function mousePressed() {
     } else if (scene === 4 && isMouseOverBear()) {
         bearSound.play(); //this should make a sound for each time the bear's face is presssed
         currentBearLine = (currentBearLine + 1) % bearLines.length;//thisd should make the lines cycle in order
+    } else if (scene === 3 && isMouseOverDen2()) {
+        moleSound.play(); // mole sfx
+        currentMoleLine = 0; 
+        scene = 5;
+    } else if (scene === 5 && isMouseOverBackButton()) {
+        scene = 3; //brings backButton, 
+    } else if (scene === 5 && isMouseOverMole()) {
+        moleSound.play();
+        currentMoleLine = (currentBearLine + 1) % moleLines.length;
     }
 }
 
