@@ -125,6 +125,7 @@ Marko
 # Final Reflective Journal Part 3
 ## TBD November 2026
 
+### Post Completion
 I now want to ffigure out the sound and create other dens and finally before stylizing and finishing up, i want to create sound effects for the chat bubbles popping up and mulitple arrays for each animal to stimulate an immersive conversation in some minimal way with the time i have.
 
 STARTED song and sound effect
@@ -161,4 +162,4 @@ changed and added dialogue and mousePressed functions :    currentBearLine = 0; 
         bearSound.play(); //this should make a sound for each time the bear's face is presssed
         currentBearLine = (currentBearLine + 1) % bearLines.length;//thisd should make the lines cycle in order
     }
-### Post Completion
+

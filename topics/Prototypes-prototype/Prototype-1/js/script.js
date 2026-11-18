@@ -9,21 +9,43 @@
 //now for sound
 let song; //theme song
 let buttonClick; //mouse click
+
 //BEAR STUFF
 let bearSound;
 let bearLines = [
     "Zzzz... Ohh, are you the masseuse I booked ?",
     "Ah... It's you again, you look...Different...",
-    "Go bother my friends I have Honey to Taste-Test",
+    "Go bother my friends, I have Honey to Taste-Test",
     "SCRAM!",
-    "...",
+    "*Farts*",
     "My man...",
     "LEAVE ME BE!",
-    "i'm running out of things to say",
-    "FINE! You got me I'm too lazy, you can break the immersion",
-    "I guess I'll say one more line before looping back to my original line"
+    "I'm running out of things to say",
+    "FINE! Break the immersion!",
+    "Wait !!!", "Lemme say one more line before looping back!", "Have you seen Lady Gala ?","Boy I miss my Lady", "Okay go... NOW!"
 ];
 let currentBearLine = 0;
+
+//MOLE STUFF
+//let animal2Sound;
+
+let moleLines = [
+    "Hoot... who wakes me from my daydream?",
+    "Placeholder wisdom 1 for Animal 2.",
+    "Placeholder wisdom 2 for Animal 2."
+];
+let currentmoleLine = 0;
+
+
+///ANIMAL 3 STUFF
+//let animal3Sound;
+
+let animal3Lines = [
+    "Yawn... oh, a visitor among the roots!",
+    "Placeholder wisdom 1 for Animal 3.",
+    "Placeholder wisdom 2 for Animal 3."
+];
+let currentAnimal3Line = 0;
 
 //backward buton from animal to roots scene
 let backButton = {
@@ -49,14 +71,30 @@ let treeArea = {
     w: 100,
     h: 580, 
 }
-
-//animal homes/dens
+//SCENE 3 DENS
+//bear
 let denArea = {
     x: 50,
     y: 350,
     w: 300,
     h: 200
 }
+//Mole
+let den2Area = {
+    x: 650,
+    y: 350,
+    w: 300,
+    h: 200
+};
+//animal3
+let den3Area = {
+    x: 350,
+    y: 680,
+    w: 300,
+    h: 200
+};
+
+
 //loads the sound
 
 function preload() {
@@ -68,8 +106,8 @@ function preload() {
  * scenes 1 to 3 ( maybe the scenes where a clsoe uop of the animal is drawn and it talkwith a text bubble)
 */
 function setup() {
-
     createCanvas(1000,1000);
+    noCursor();
 }
 
 
@@ -86,11 +124,19 @@ function draw() {
         drawScene3();
     } else if (scene === 4) {
         drawSceneBear();
-    } 
+    } else if (scene === 5) {
+        drawSceneMole();
+    } else if (scene === 6) {
+        drawSceneBunny();
+    }
 
-
+//cursor draw
+    if (cursorType === "hand") {
+        drawHandCursor();
+    } else {
+        drawArrowCursor();
+    }
 }
-
 
 
 //SCENE 1
@@ -140,11 +186,10 @@ function drawScene1() {
     let hoveringBushes = isMouseOverBush();
     //this will hopefully let me know if the overlap is being registered
     if (hoveringBushes) {
-        cursor (HAND);
+        cursorType = "hand";
         fill(45, 85, 65);
     } else {
-        cursor(ARROW);
-        fill(ARROW);
+        cursorType = "arrow";
         fill(30, 60, 45);
     }
 
@@ -206,10 +251,10 @@ function drawScene2() {
     let hoveringTree = isMouseOverTree();
     
     if (hoveringTree) {
-        cursor(HAND);
+        cursorType = "hand";
         fill(200, 120, 130);
     } else {
-        cursor(ARROW);
+        cursorType = "arrow";
         fill("rgb(85, 48, 58)");
     }
 
@@ -278,10 +323,10 @@ function drawScene3() {
     //THE DENS IN QUESTION
     let hoveringDen = isMouseOverDen();
     if (hoveringDen) {
-        cursor(HAND);
+        cursorType = "hand";
         fill(200, 120, 130);
     } else {
-        cursor(ARROW);
+        cursorType = "arrow";
         fill(120, 60, 70);
     }
 // the den using the variable's preset attributes 
@@ -428,13 +473,13 @@ function drawScene3() {
     let hoveringBack = isMouseOverBackButton();
 
     if (hoveringBack) {
-        cursor(HAND);
+        cursorType = "hand";
         fill(188, 5, 56)
     } else if (isMouseOverBear()) {
-        cursor(HAND);
+        cursorType = "hand";
         fill(120, 60, 70);
     } else {
-        cursor(ARROW);
+        cursorType = "arrow";
         fill(120, 60, 70);
     }
     //BACKBUTTON
@@ -532,3 +577,34 @@ function mousePressed() {
     }
 }
 
+//how the cursor will look when moveing around and not interacting or hovering
+
+function drawArrowCursor() {
+    
+    translate(mouseX, mouseY);
+    rectMode(CENTER);
+    fill("rgb(248, 248, 248)");
+    stroke("black");
+    strokeWeight(1.5);
+
+    rect(0, 18, 18, 12, 3);   
+    rect(-14, 3, 14, 8, 4);      
+    rect(0, -1, 24, 32, 10); 
+    
+}
+
+// how the cursor looks when interacting
+function drawHandCursor() {
+    
+    translate(mouseX, mouseY);
+    rectMode(CENTER);
+    fill("hsl(0, 0%, 100%)");
+    stroke("black");
+    strokeWeight(1.5);
+
+    rect(0, 18, 18, 12, 3); //wrist   
+    rect(-12, 2, 14, 8, 4); //thumb
+    ellipse(0, 2, 26, 26);  //hand
+    rect(-7, -14, 7, 18, 4.5);  //index
+    
+}
