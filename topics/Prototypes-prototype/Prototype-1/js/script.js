@@ -250,16 +250,10 @@ function drawScene2() {
     rect(110, 540, 100, 100);
     rect(850, 600, 100, 70);
     
-
-    // tall main tree
-    noStroke();
-    
-    fill("rgb(85, 48, 58)")
-    rect(500, 140, 100, 580);
-    
     //same hovercheck as bushes
     let hoveringTree = isMouseOverTree();
-    
+    // tall main tree
+    noStroke();
     if (hoveringTree) {
         cursorType = "hand";
         fill(200, 120, 130);
@@ -267,7 +261,8 @@ function drawScene2() {
         cursorType = "arrow";
         fill("rgb(85, 48, 58)");
     }
-
+    rect(500, 140, 100, 580);
+    
     //highlight tree overlap
     noStroke();
     rect(treeArea.x, treeArea.y, treeArea.w, treeArea.h);
@@ -289,17 +284,23 @@ function drawScene2() {
     ellipse(610, 210, 230, 170);
 
     //same principle as the bushes but for the tree
-    if (hoveringTree) {
-        rectMode(CENTER);
-        fill(0 , 150);
-        noStroke();
-        rect(width / 2, 300, 460, 40, 10);
-
-        fill(255);
-        textAlign(CENTER);
-        textSize(22);
-        text("Click to examine the Rooted Tree...", width / 2, 308);
+if (hoveringTree) {
+        fill(235, 110, 160);
+    } else {
+        fill("rgb(201, 47, 106)");
     }
+    ellipse(330, 160, 260, 220);
+    ellipse(510, 130, 340, 260);
+    ellipse(690, 170, 250, 210);
+
+    //lower leaves
+    if (hoveringTree) {
+        fill(150, 40, 80);
+    } else {
+        fill("rgb(80, 2, 32)");
+    }
+    ellipse(430, 210, 220, 160);
+    ellipse(610, 210, 230, 170);
 }
 
 //SCENE 3
@@ -335,14 +336,19 @@ function drawScene3() {
     let hoveringDen2 = isMouseOverDen2();
     let hoveringDen3 = isMouseOverDen3();
 
-    if (hoveringDen || hoveringDen2 || hoveringDen3) {
+    if (hoveringDen || hoveringDen2 || hoveringDen3) { //removed fill because it would interfere with hovering effects
         cursorType = "hand";
-        fill(200, 120, 130);
     } else {
         cursorType = "arrow";
         fill(120, 60, 70);
     }
+
 // den 1 using the variable's preset attributes 
+    if (hoveringDen) {
+        fill(200, 120, 130);
+    } else {
+        fill(120, 60, 70);
+    }
 
     ellipse(denArea.x + denArea.w / 2, denArea.y + denArea.h / 2, denArea.w, denArea.h);
     fill(35, 12, 20);
