@@ -373,7 +373,6 @@ let hoveringDen3 = isMouseOverDen3();
     ellipse(denArea.x + denArea.w / 2, denArea.y + denArea.h / 2, denArea.w - 40, denArea.h - 40);
 
 //den 2
-//den 2
     if (hoveringDen2) {
         fill(200, 120, 130);
     } else {
@@ -382,7 +381,22 @@ let hoveringDen3 = isMouseOverDen3();
     ellipse(den2Area.x + den2Area.w / 2, den2Area.y + den2Area.h / 2, den2Area.w, den2Area.h);
     fill(35, 12, 20);
     ellipse(den2Area.x + den2Area.w / 2, den2Area.y + den2Area.h / 2, den2Area.w - 40, den2Area.h - 40);
-    
+    //i deleted my banner text again, im going insane
+    if (hoveringDen2) {
+        rectMode(CENTER);
+        fill(0, 150);
+        noStroke();
+
+        let bannerX = min(den2Area.x + den2Area.w / 2, width - 220);
+        let bannerY = den2Area.y + den2Area.h + 40;
+
+        rect(bannerX, bannerY, 440, 40, 10);
+
+        fill(255);
+        textAlign(CENTER);
+        textSize(18);
+        text("Click a sleeping animal to wake them and listen...", bannerX, bannerY + 6);
+    }
     
 //MOLE
 let den2CenterX = den2Area.x + den2Area.w / 2;
@@ -400,6 +414,23 @@ let den2CenterY = den2Area.y + den2Area.h / 2;
     ellipse(den3Area.x + den3Area.w / 2, den3Area.y + den3Area.h / 2, den3Area.w, den3Area.h);
     fill(35, 12, 20);
     ellipse(den3Area.x + den3Area.w / 2, den3Area.y + den3Area.h / 2, den3Area.w - 40, den3Area.h - 40);
+    //banner den 3
+    if (hoveringDen3) {
+        rectMode(CENTER);
+        fill(0, 150);
+        noStroke();
+
+        let bannerX = min(den3Area.x + den3Area.w / 2, width - 220);
+        let bannerY = den3Area.y + den3Area.h + 40;
+
+        rect(bannerX, bannerY, 440, 40, 10);
+
+        fill(255);
+        textAlign(CENTER);
+        textSize(18);
+        text("Nothing special to look at here....Go away now....", bannerX, bannerY + 6);
+    }
+
     //Bunny
 let den3CenterX = den3Area.x + den3Area.w / 2;
 let den3CenterY = den3Area.y + den3Area.h / 2;
@@ -458,7 +489,7 @@ let bannerY = denArea.y + denArea.h + 40; // right under the den as i said
     textSize(18);
     text("Click a sleeping animal to wake them and listen...", bannerX, bannerY + 6);
     }
-//BEAR CLOSE UP SCENE
+//BEAR CLOSE UP SCENE SCENE 4
 }
 function drawSceneBear() {
     // I want the face to be a big ellipse, same colors. so ill reuse the previous code based on my needs. this time hopefully it will actually look like a bear.
@@ -720,10 +751,10 @@ function isMouseOverBackButton() {
 
 //adding the mouseoverbear for the sounds now
 function isMouseOverBear() {
-        let bearX = 350;
-        let bearY = 300;
-        let bearW = 300;
-        let bearH = 400;
+        let bearX = 150;
+        let bearY = 120;
+        let bearW = 700;
+        let bearH = 680;
 
     return (
         mouseX > bearX &&
@@ -734,10 +765,10 @@ function isMouseOverBear() {
 }
 
 function isMouseOverMole() {
-        let moleX = 350;
-        let moleY = 300;
-        let moleW = 300;
-        let moleH = 400;
+        let moleX = 200;
+        let moleY = 160;
+        let moleW = 600;
+        let moleH = 650;
 
     return (
         mouseX > moleX &&
