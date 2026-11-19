@@ -209,7 +209,11 @@ function drawScene1() {
     ellipse(500, 800, 340, 260);
     ellipse(680, 840, 250, 210);
 
-    fill(20, 45, 35);
+    if (hoveringBushes) {
+        fill(35, 70, 55);
+    } else {
+        fill(20, 45, 35);
+    }
     ellipse(410, 870, 220, 160);
     ellipse(590, 870, 230, 170);
 
@@ -301,7 +305,21 @@ if (hoveringTree) {
     }
     ellipse(430, 210, 220, 160);
     ellipse(610, 210, 230, 170);
+    
+    if (hoveringTree) {
+        rectMode(CENTER);
+        fill(0, 150);
+        noStroke();
+        rect(width / 2, 300, 460, 40, 10);
+
+        fill(255);
+        textAlign(CENTER);
+        textSize(22);
+        text("Click to examine the Rooted Tree...", width / 2, 308);
+    } // accidentally deleted this so i had to go to the logs
+
 }
+
 
 //SCENE 3
 
@@ -355,14 +373,23 @@ function drawScene3() {
     ellipse(denArea.x + denArea.w / 2, denArea.y + denArea.h / 2, denArea.w - 40, denArea.h - 40);
 
 //den 2
-    if (hoveringDen2) {
-        fill(200, 120, 130);
-    } else {
-        fill(120, 60, 70);
+     if (hoveringDen2) {
+        rectMode(CENTER);
+        fill(0, 150);
+        noStroke();
+
+        let bannerX = min(den2Area.x + den2Area.w / 2, width - 220);
+        let bannerY = den2Area.y + den2Area.h + 40;
+
+        rect(bannerX, bannerY, 440, 40, 10);
+
+        fill(255);
+        textAlign(CENTER);
+        textSize(18);
+        text("Click a sleeping animal to wake them and listen...", bannerX, bannerY + 6);
     }
-    ellipse(den2Area.x + den2Area.w / 2, den2Area.y + den2Area.h / 2, den2Area.w, den2Area.h);
-    fill(35, 12, 20);
-    ellipse(den2Area.x + den2Area.w / 2, den2Area.y + den2Area.h / 2, den2Area.w - 40, den2Area.h - 40);  
+    
+    
 //MOLE
     let den2CenterX = den2Area.x + den2Area.w / 2;
     let den2CenterY = den2Area.y + den2Area.h / 2;
