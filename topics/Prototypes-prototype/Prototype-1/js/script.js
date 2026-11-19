@@ -254,8 +254,8 @@ function drawScene2() {
     rect(110, 540, 100, 100);
     rect(850, 600, 100, 70);
     
-    //same hovercheck as bushes
-    let hoveringTree = isMouseOverTree();
+//same hovercheck as bushes
+let hoveringTree = isMouseOverTree();
     // tall main tree
     noStroke();
     if (hoveringTree) {
@@ -344,15 +344,15 @@ function drawScene3() {
     bezier(550, 180, 650, 350, 800, 500, 900, 800);
     noStroke();
 
-        //tree trunk
+//tree trunk
     fill(85, 48, 58);
     noStroke();
     rect(410, 0, 180, 228);
 
-    //THE DENS IN QUESTION
-    let hoveringDen = isMouseOverDen();
-    let hoveringDen2 = isMouseOverDen2();
-    let hoveringDen3 = isMouseOverDen3();
+//THE DENS IN QUESTIONww
+let hoveringDen = isMouseOverDen();
+let hoveringDen2 = isMouseOverDen2();
+let hoveringDen3 = isMouseOverDen3();
 
     if (hoveringDen || hoveringDen2 || hoveringDen3) { //removed fill because it would interfere with hovering effects
         cursorType = "hand";
@@ -373,26 +373,20 @@ function drawScene3() {
     ellipse(denArea.x + denArea.w / 2, denArea.y + denArea.h / 2, denArea.w - 40, denArea.h - 40);
 
 //den 2
-     if (hoveringDen2) {
-        rectMode(CENTER);
-        fill(0, 150);
-        noStroke();
-
-        let bannerX = min(den2Area.x + den2Area.w / 2, width - 220);
-        let bannerY = den2Area.y + den2Area.h + 40;
-
-        rect(bannerX, bannerY, 440, 40, 10);
-
-        fill(255);
-        textAlign(CENTER);
-        textSize(18);
-        text("Click a sleeping animal to wake them and listen...", bannerX, bannerY + 6);
+//den 2
+    if (hoveringDen2) {
+        fill(200, 120, 130);
+    } else {
+        fill(120, 60, 70);
     }
+    ellipse(den2Area.x + den2Area.w / 2, den2Area.y + den2Area.h / 2, den2Area.w, den2Area.h);
+    fill(35, 12, 20);
+    ellipse(den2Area.x + den2Area.w / 2, den2Area.y + den2Area.h / 2, den2Area.w - 40, den2Area.h - 40);
     
     
 //MOLE
-    let den2CenterX = den2Area.x + den2Area.w / 2;
-    let den2CenterY = den2Area.y + den2Area.h / 2;
+let den2CenterX = den2Area.x + den2Area.w / 2;
+let den2CenterY = den2Area.y + den2Area.h / 2;
     fill(180, 140, 100);
     ellipse(den2CenterX, den2CenterY + 10, 110, 70);
 
@@ -407,15 +401,15 @@ function drawScene3() {
     fill(35, 12, 20);
     ellipse(den3Area.x + den3Area.w / 2, den3Area.y + den3Area.h / 2, den3Area.w - 40, den3Area.h - 40);
     //Bunny
-    let den3CenterX = den3Area.x + den3Area.w / 2;
-    let den3CenterY = den3Area.y + den3Area.h / 2;
+let den3CenterX = den3Area.x + den3Area.w / 2;
+let den3CenterY = den3Area.y + den3Area.h / 2;
     fill(140, 160, 130);
     ellipse(den3CenterX, den3CenterY + 10, 110, 70);
 
 //definitely reusing this for the other amimals
 //the bear (to move around) i drew this after the the highlight and instructions and it was making the position of the bear move when i would hover so that makes more sense now.
-    let denCenterX = denArea.x + denArea.w / 2;
-    let denCenterY = denArea.y + denArea.h / 2;   //this will find the exact middle of my dens, doesnt matter where denArea x & y are set.
+let denCenterX = denArea.x + denArea.w / 2;
+let denCenterY = denArea.y + denArea.h / 2;   //this will find the exact middle of my dens, doesnt matter where denArea x & y are set.
 
     //BEAR 
     //body
@@ -454,8 +448,8 @@ function drawScene3() {
     noStroke();
         
     // Calculate center based on the den's new position
-    let bannerX = denArea.x + denArea.w / 2; // this should make it center everytime
-    let bannerY = denArea.y + denArea.h + 40; // right under the den as i said
+let bannerX = denArea.x + denArea.w / 2; // this should make it center everytime
+let bannerY = denArea.y + denArea.h + 40; // right under the den as i said
         
     rect(bannerX, bannerY, 440, 40, 10);
         
@@ -466,7 +460,7 @@ function drawScene3() {
     }
 //BEAR CLOSE UP SCENE
 }
-  function drawSceneBear() {
+function drawSceneBear() {
     // I want the face to be a big ellipse, same colors. so ill reuse the previous code based on my needs. this time hopefully it will actually look like a bear.
     rectMode(CORNER);
     background("rgb(75, 50, 27)");
@@ -547,7 +541,7 @@ function drawScene3() {
     text("(Click the BEAR to hear more 'wisdom')", width / 2, 920); //instruciton to click
 
     //backward button 
-    let hoveringBack = isMouseOverBackButton();
+let hoveringBack = isMouseOverBackButton();
 
 
     if (hoveringBack) {
@@ -638,7 +632,7 @@ function drawSceneMole() {
     text("(Click the MOLE to hear more 'confusion')", width / 2, 920); //instruciton to click
 
     //backward button 
-    let hoveringBack = isMouseOverBackButton();
+let hoveringBack = isMouseOverBackButton();
 
 
     if (hoveringBack) {
