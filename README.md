@@ -165,7 +165,7 @@ This place keeps information about my prototyping projects
 
 ## Final Project
 
-### [Link to my reflective journal](./journal.md)
+
 
 ### ROOTED
 
@@ -174,3 +174,5 @@ This place keeps information about my prototyping projects
 [Online](https://polom2.github.io/cart253/topics/Prototypes-prototype/Prototype-1/)
 
 [code](https://github.com/PoloM2/cart253/blob/main/topics/Prototypes-prototype/Prototype-1//js/script.js)
+
+### [Link to my reflective journal](./journal.md)
