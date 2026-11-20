@@ -126,47 +126,17 @@ Marko
 ## TBD November 2026
 
 ### Post Completion
-I now want to ffigure out the sound and create other dens and finally before stylizing and finishing up, i want to create sound effects for the chat bubbles popping up and mulitple arrays for each animal to stimulate an immersive conversation in some minimal way with the time i have.
+As I get closer to finishing my final prototype, I have been focusing on bringing the experience together through sound, dialogue, and smaller details that make the world feel more alive. One of my biggest goals was finally getting the music and sound effects working, especially after struggling with loadSound() in my previous prototypes. I had to reattempt the audio several times, checking my file paths, HTML, and sound functions. At first, the music would only play after the first mouse press, which was frustrating because I wanted it to start automatically. Eventually, I managed to get it working, and even though it might seem like a small accomplishment, I was genuinely happy because I had been confused about this for so long.
 
-STARTED song and sound effect
-I am reattempting the sounds for my prototype this time making sure the path and html are right, my issue is that the song only plays after the first mousePress, which is annoying and if i put it in setup() it doesn't allow it / blocked.  testing sounds and started the dialogue bbble pop up
+I also started adding sound effects for the animals, particularly the bear. This came with a few problems of its own. The bear wasn't making sounds when clicked because I had forgotten to check that the scene was equal to 4, which is the close-up scene. I also had a small mistake when copying my else if statements. Troubleshooting these issues helped me better understand how my conditionals and mousePressed() functions work together.
+Another big step was successfully implementing dialogue for the animals. I used arrays to store the bear's dialogue and made it so each click moves to the next line. I also added a way to return to the previous scene using a back button. Seeing all these functions work together as I originally imagined was really satisfying. I also fixed an issue where one of my dens was not appearing because the hover-text banner was being drawn over it.
+At this point, I want to focus on the finishing touches and the overall message of the story. I have been thinking about adding more dialogue in the earlier scenes to give hints about the story's meaning. I want to explore the idea of someone who starts off disconnected from nature and technology, but gradually becomes more rooted in the natural world through exploration and interaction. I also have some extra ideas, like hidden stars that could lead to a secret animal feast, although I need to be realistic with the time I have left.
 
-I actually managed to make the music work, what a satisfying accomplsheement for me but not a big one at all in general, idk why im so happy probably because i was so confused as to why i never worked on my ealier prototypes. I will now attempt to make a BEAR sound effect for when the bear talks/ghets clicked on/ or when the bear den is presss and he pops up in a close up.
+Overall, this project has pushed me to use almost everything I learned throughout the semester, from variables and conditionals to arrays, functions, sound, and scene management. I am proud of how much I managed to bring together, especially considering how many problems I had to troubleshoot along the way. It has made me more confident in experimenting with code and combining programming with storytelling and visual design.
 
-added more variable and stuff like:
+Marko
 
- else if (scene === 3 && isMouseOverDen()) {
-        bearSound.play();//bear sound effect when pressing on his den, a noise he will make when you get up close to him for a chat
+ORIGINAL NOTE ----MAKE MESSAGES IN EARLIER SCENES TO PUSH STORY LORE
+"you started by rooted to technology (hinted by you wearing headphones, and the bear mentions you look different then before), there could be a button that says click to remove headphones at the beginning to fix the non-immersiveness of having the soundtrack pplay only when the first mouse click is pressed, and the more you explore nature the more you become ROOTED. ----
 
-else if (isMouseOverBear()) {
-        bearSound.play(); //this should make a sound for each time the bear's face is presssed
-
-        fixed bear sound moving to bubble
-the bear wasnt making noise when i would press on him due to me not checking if scene was equal to 4 which is the close up scene, and a type due to me pasting the same line and forget to remove part of the previous else if
-
-changed and added dialogue and mousePressed functions :    currentBearLine = 0; //sets the line its at
-        scene = 4;
-    } else if (scene === 4 && isMouseOverBackButton()) {
-        scene = 3; //this will hopefully bring me back to the previous scene
-    } else if (scene === 4 && isMouseOverBear()) {
-        bearSound.play(); //this should make a sound for each time the bear's face is presssed
-        currentBearLine = (currentBearLine + 1) % bearLines.length;//thisd should make the lines cycle in order
-    }
-
-succesfully made dialogues and the all the functions wrok how i expected…
-changed and added dialogue and mousePressed functions :    currentBearLine = 0; //sets the line its at
-        scene = 4;
-    } else if (scene === 4 && isMouseOverBackButton()) {
-        scene = 3; //this will hopefully bring me back to the previous scene
-    } else if (scene === 4 && isMouseOverBear()) {
-        bearSound.play(); //this should make a sound for each time the bear's face is presssed
-        currentBearLine = (currentBearLine + 1) % bearLines.length;//thisd should make the lines cycle in order
-    }
-
-I finally fixed the den not showing after implementing the hover text because i the banner block was above den 2 inner and outer ellipse it wouldnt get drawn only the animal palceholder for the mole
-
-now i will finish my journal and do finishing touches, i want to refine  he moral of the story with my message
-
-
-NOTE ----MAKE MESSAGES IN EARLEIR SCENES TO PUSH STORY LORE, " you started by rooted to technology (hinted by you wearing headphones, and the bear mentions you look different then before), there could be a button that says click to remove headphones at the beginning to fix the non-immersiveness of having the soundtrack pplay only when the first mouse click is pressed, and the more you explore nature the more you become ROOTED. ----
 ALSO WOULD LIEK TO ADD LITTLE STARS IN THE FIRST SCENE WITH THE TREE ----> BC ONE OF THE ANIMALS WILL HINT AT THEM WITH A RIDDLE EX: " the place where the stars shine bright, the one that sits closest to the EAST will show you the way to the FEAST" and when you hover over the little star thats closest to the RIGHT OR EAST, you will be brought to a special scene where the animals are having a feast.

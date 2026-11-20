@@ -365,27 +365,29 @@ function drawScene3() {
 
     //gradiant effect simple my way
     noStroke();
-    
-    fill("rgb(138, 5, 56)");
-    ellipse(500, 90, 1300, 270);
+    fill(95, 58, 34);
+    ellipse(500, 60, 1200, 180);
+    fill(118, 22, 58);
+    ellipse(500, 15, 1100, 110);
 
     
+    //tree
+    fill(40, 15, 25);
+    noStroke();
+    rect(415, 0, 170, 210);
+    ellipse(500, 205, 190, 45);
+
     //roots using bezier for the first time from p5js
     stroke(40, 15, 25);
     strokeWeight(12);
     noFill();
-    bezier(500, 200, 400, 250, 250, 300, 80, 550);
-    bezier(500, 200, 600, 250, 750, 300, 920, 550);
-    bezier(450, 180, 350, 350, 200, 500, 100, 800);
-    bezier(550, 180, 650, 350, 800, 500, 900, 800);
+    bezier(445, 205, 360, 250, 220, 320, 80, 550);
+    bezier(555, 205, 640, 250, 780, 320, 920, 550);
+    bezier(470, 210, 350, 350, 200, 520, 100, 800);
+    bezier(530, 210, 650, 350, 800, 520, 900, 800);
     noStroke();
 
-//tree trunk
-    fill(85, 48, 58);
-    noStroke();
-    rect(410, 0, 180, 228);
-
-//THE DENS IN QUESTIONww
+//THE DENS IN QUESTION
 let hoveringDen = isMouseOverDen();
 let hoveringDen2 = isMouseOverDen2();
 let hoveringDen3 = isMouseOverDen3();
@@ -394,7 +396,7 @@ let hoveringDen3 = isMouseOverDen3();
         cursorType = "hand";
     } else {
         cursorType = "arrow";
-        fill(120, 60, 70);
+        
     }
 
 // den 1 using the variable's preset attributes 
