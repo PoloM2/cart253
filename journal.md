@@ -163,5 +163,9 @@ changed and added dialogue and mousePressed functions :    currentBearLine = 0; 
         currentBearLine = (currentBearLine + 1) % bearLines.length;//thisd should make the lines cycle in order
     }
 
-    
 I finally fixed the den not showing after implementing the hover text because i the banner block was above den 2 inner and outer ellipse it wouldnt get drawn only the animal palceholder for the mole
+
+now i will finish my journal and do finishing touches, i want to refine  he moral of the story with my message
+
+
+NOTE MAKE MESSAGES IN EARLEIR SCENES TO PUSH STORY LORE,
