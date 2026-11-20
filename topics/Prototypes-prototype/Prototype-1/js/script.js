@@ -47,14 +47,25 @@ let currentMoleLine = 0;
 
 
 ///ANIMAL 3 STUFF
-//let animal3Sound;
 
-let animal3Lines = [
-    "Yawn... oh, a visitor among the roots!",
-    "Placeholder wisdom 1 for Animal 3.",
-    "Placeholder wisdom 2 for Animal 3."
+let bunnySound;
+
+let bunnyLines = [
+    "YOU FOUND THE GOLDEN BANUNU !!!",
+    "Eh, what's up, doc?",
+    "Zub zub zib",
+    "Те сакам Гала ",
+    "Is it hunting season ??",
+    "I do not sleep, nor do I have many lines",
+    "GOODBYE !",
+    "in 3...",
+    "2....",
+    "1!",
+    "Just kidding",
+    "okay bye now"
+
 ];
-let currentAnimal3Line = 0;
+let currentBunnyLine = 0;
 
 //backward buton from animal to roots scene
 let backButton = {
@@ -111,6 +122,7 @@ function preload() {
     buttonClick = loadSound('assets/sounds/buttonclick.wav');
     bearSound = loadSound('assets/sounds/bear.mp3') //bear when clicking den and on him for dialogue
     moleSound = loadSound('assets/sounds/mole.mp3')// mole when clicking den and on him for dialogue
+    bunnySound = loadSound('assets/sounds/bunny.mp3')
 }
 /**
  * scenes 1 to 3 ( maybe the scenes where a clsoe uop of the animal is drawn and it talkwith a text bubble)
@@ -318,6 +330,30 @@ if (hoveringTree) {
         text("Click to examine the Rooted Tree...", width / 2, 308);
     } // accidentally deleted this so i had to go to the logs
 
+    let hoveringBack = isMouseOverBackButton();
+
+
+    if (hoveringBack) {
+        cursorType = "hand";
+        fill(188, 5, 56)
+    } else if (isMouseOverBear()) {
+        cursorType = "hand";
+        fill(120, 60, 70);
+    } else {
+        cursorType = "arrow";
+        fill(120, 60, 70);
+    }
+    //BACKBUTTON
+    rectMode(CORNER);
+    noStroke();
+    rect(backButton.x, backButton.y, backButton.w, backButton.h, 10); // an extra category after the height gives it a bevling for rounded corners,
+    
+    //I should add a text for the button
+    fill("White");
+    textAlign(CENTER, CENTER);
+    textSize(18);
+    text("← Back", backButton.x + backButton.w / 2, backButton.y + backButton.h / 2);
+
 }
 
 
@@ -399,10 +435,34 @@ let hoveringDen3 = isMouseOverDen3();
     }
     
 //MOLE
+    // MOLE IN DEN 2 (Bear style)
 let den2CenterX = den2Area.x + den2Area.w / 2;
 let den2CenterY = den2Area.y + den2Area.h / 2;
-    fill(180, 140, 100);
-    ellipse(den2CenterX, den2CenterY + 10, 110, 70);
+
+    stroke("black");
+    strokeWeight(2);
+
+    //foot 1
+    fill("pink");
+    ellipse(den2CenterX +50, den2CenterY + 65, 30, 10);
+    // Body
+    fill(75, 65, 68);
+    ellipse(den2CenterX - 8, den2CenterY + 34, 150, 82);
+    fill(60, 52, 55);
+    ellipse(den2CenterX + 12, den2CenterY + 42, 115, 68);
+
+    // Little pink nose tip
+    fill("pink");
+    ellipse(den2CenterX + 58, den2CenterY + 46, 16, 12);
+    // eyes liek the bear
+    noFill();
+    stroke(20, 10, 15);
+    strokeWeight(2);
+    arc(den2CenterX + 32, den2CenterY + 34, 14, 10, 0, PI);
+    //foot 2
+    fill("pink"); 
+    ellipse(den2CenterX -30, den2CenterY + 65, 30, 10);
+    
 
 //den 3
 
@@ -434,9 +494,12 @@ let den2CenterY = den2Area.y + den2Area.h / 2;
     //Bunny
 let den3CenterX = den3Area.x + den3Area.w / 2;
 let den3CenterY = den3Area.y + den3Area.h / 2;
-    fill(140, 160, 130);
+    fill("gold");
     ellipse(den3CenterX, den3CenterY + 10, 110, 70);
-
+    fill(0);
+    textAlign(CENTER);
+    textSize(50);
+    text("?", den3CenterX, den3CenterY + 10);
 //definitely reusing this for the other amimals
 //the bear (to move around) i drew this after the the highlight and instructions and it was making the position of the bear move when i would hover so that makes more sense now.
 let denCenterX = denArea.x + denArea.w / 2;
@@ -469,7 +532,7 @@ let denCenterY = denArea.y + denArea.h / 2;   //this will find the exact middle 
     noFill();
     arc(denCenterX - 60, denCenterY - 15, 14, 10, 0, PI);
     noStroke();
-
+//
 
     // I wanted to move around the den and the text but it's not effiecient enough to always play with the coordinates and try to align them each time so i am going to make 2 variable to calculate the x1&xx2 and y1&y2 of the den area added and div by 2 to center it and added + 40 to make sure its lower then the actual den
     // Instruction Banner at the bottom when hovering
@@ -489,6 +552,31 @@ let bannerY = denArea.y + denArea.h + 40; // right under the den as i said
     textSize(18);
     text("Click a sleeping animal to wake them and listen...", bannerX, bannerY + 6);
     }
+
+let hoveringBack = isMouseOverBackButton();
+
+
+    if (hoveringBack) {
+        cursorType = "hand";
+        fill(188, 5, 56)
+    } else if (isMouseOverBear()) {
+        cursorType = "hand";
+        fill(120, 60, 70);
+    } else {
+        cursorType = "arrow";
+        fill(120, 60, 70);
+    }
+    //BACKBUTTON
+    rectMode(CORNER);
+    noStroke();
+    rect(backButton.x, backButton.y, backButton.w, backButton.h, 10); // an extra category after the height gives it a bevling for rounded corners,
+    
+    //I should add a text for the button
+    fill("White");
+    textAlign(CENTER, CENTER);
+    textSize(18);
+    text("⬅ Back", backButton.x + backButton.w / 2, backButton.y + backButton.h / 2);
+
 //BEAR CLOSE UP SCENE SCENE 4
 }
 function drawSceneBear() {
@@ -688,7 +776,99 @@ let hoveringBack = isMouseOverBackButton();
     text("← Back", backButton.x + backButton.w / 2, backButton.y + backButton.h / 2);
 
     }
+//SCENE 6 BUNNY
 
+function drawSceneBunny() {
+    rectMode(CORNER);
+    background("rgb(75, 50, 27)");
+//same thing as the other ones im jsut going to tweak the shapes and colors like the bear its more similar
+    // Ears
+    fill("rgb(235, 190, 85)");
+    ellipse(395, 220, 110, 260);
+    ellipse(605, 220, 110, 260);
+    fill("rgb(245, 175, 185)");
+    ellipse(395, 225, 55, 180);
+    ellipse(605, 225, 55, 180);
+
+    // main body shapes
+    fill("rgb(220, 170, 65)");
+    ellipse(500, 720, 560, 460);
+    fill("rgb(245, 200, 95)");
+    ellipse(500, 490, 480, 420);
+    //mouth
+    fill("rgb(245, 175, 185)");
+    ellipse(500, 490, 300, 300);
+
+    //grin
+    noFill();
+  
+    arc(500, 505, 290, 125, 0.12 * PI, 0.88 * PI);
+ 
+
+    // Eyes, 
+    fill("white");
+    ellipse(450, 470, 64, 84);
+    ellipse(550, 470, 64, 84);
+    fill("black");
+    ellipse(459, 470, 34, 64);
+    ellipse(559, 470, 34, 64);
+    fill("white");
+    ellipse(458, 462, 10, 10);
+    ellipse(558, 462, 10, 10);
+    //nose
+    fill("rgb(245, 22, 70)");
+    ellipse(500, 515, 42, 30);
+
+    // hands
+    fill("rgb(235, 190, 85)");
+    ellipse(360, 740, 120, 80);
+    ellipse(640, 740, 120, 80);
+
+    //DIALOGUE
+    rectMode(CENTER);
+    fill(255, 245, 235, 235); 
+    stroke(40, 15, 25);
+    strokeWeight(4);
+    rect(width / 2, 880, 820, 130, 20); //bubble
+    noStroke();
+    fill(35, 12, 20);
+    textAlign(CENTER, CENTER);
+    textSize(40);
+    textStyle(ITALIC);
+    textFont('Courrier New');
+    text(bunnyLines[currentBunnyLine], width / 2, 870);// dialogue itself
+    fill(120, 60, 70);
+    textSize(22);
+    textStyle(BOLD);
+    text("(Click the BANUNU to hear more 'confusion')", width / 2, 920); //instruciton to click
+
+
+
+let hoveringBack = isMouseOverBackButton();
+
+
+    if (hoveringBack) {
+        cursorType = "hand";
+        fill(188, 5, 56)
+    } else if (isMouseOverBear()) {
+        cursorType = "hand";
+        fill(120, 60, 70);
+    } else {
+        cursorType = "arrow";
+        fill(120, 60, 70);
+    }
+    //BACKBUTTON
+    rectMode(CORNER);
+    noStroke();
+    rect(backButton.x, backButton.y, backButton.w, backButton.h, 10); // an extra category after the height gives it a bevling for rounded corners,
+    
+    //I should add a text for the button
+    fill("White");
+    textAlign(CENTER, CENTER);
+    textSize(18);
+    text("⬅ Back", backButton.x + backButton.w / 2, backButton.y + backButton.h / 2);
+
+}
 
 
 
@@ -775,7 +955,22 @@ function isMouseOverMole() {
         mouseX < moleX + moleW &&
         mouseY > moleY &&
         mouseY < moleY + moleH
+    ); 
+}
+    
+   function isMouseOverBunny() {
+        let bunnyX = 200;
+        let bunnyY = 160;
+        let bunnyW = 600;
+        let bunnyH = 650;
+
+    return (
+        mouseX > bunnyX &&
+        mouseX < bunnyX + bunnyW &&
+        mouseY > bunnyY &&
+        mouseY < bunnyY + bunnyH
     );  
+
 }
 
 //this will enable mouse click if the cursor overalps with bushes and if scene is equal to 1, whihch it wil be, it should then shift to the next draw ( aka scene 2)
@@ -810,6 +1005,20 @@ function mousePressed() {
     } else if (scene === 5 && isMouseOverMole()) {
         moleSound.play();
         currentMoleLine = (currentMoleLine + 1) % moleLines.length;
+    } else if (scene === 3 && isMouseOverBackButton()){ 
+        scene = 2;
+    } else if (scene === 2 && isMouseOverBackButton()) {
+        scene = 1;
+    } else if (scene === 3 && isMouseOverDen3()) {
+        bunnySound.play();
+        currentBunnyLine = 0;
+        scene = 6;
+    } else if (scene === 6 && isMouseOverBackButton()) {
+        
+        scene = 3;
+    } else if (scene === 6 && isMouseOverBunny()) {
+        bunnySound.play();
+        currentBunnyLine = (currentBunnyLine + 1) % bunnyLines.length;
     }
 }
 
