@@ -169,7 +169,7 @@ This place keeps information about my prototyping projects
 
 ### ROOTED
 
-![Banner](images/.png)
+![Banner](images/rooted.png)
 
 [Online](https://polom2.github.io/cart253/topics/Prototypes-prototype/Prototype-1/)
 
