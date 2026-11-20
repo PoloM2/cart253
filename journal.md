@@ -168,4 +168,5 @@ I finally fixed the den not showing after implementing the hover text because i 
 now i will finish my journal and do finishing touches, i want to refine  he moral of the story with my message
 
 
-NOTE MAKE MESSAGES IN EARLEIR SCENES TO PUSH STORY LORE,
+NOTE ----MAKE MESSAGES IN EARLEIR SCENES TO PUSH STORY LORE, " you started by rooted to technology (hinted by you wearing headphones, and the bear mentions you look different then before), there could be a button that says click to remove headphones at the beginning to fix the non-immersiveness of having the soundtrack pplay only when the first mouse click is pressed, and the more you explore nature the more you become ROOTED. ----
+ALSO WOULD LIEK TO ADD LITTLE STARS IN THE FIRST SCENE WITH THE TREE ----> BC ONE OF THE ANIMALS WILL HINT AT THEM WITH A RIDDLE EX: " the place where the stars shine bright, the one that sits closest to the EAST will show you the way to the FEAST" and when you hover over the little star thats closest to the RIGHT OR EAST, you will be brought to a special scene where the animals are having a feast.
